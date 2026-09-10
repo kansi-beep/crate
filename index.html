@@ -456,10 +456,15 @@ a { color: var(--accent); }
     return h;
   }
 
+  // Same-origin first (served by Pages); raw.githubusercontent covers the minute
+  // after a new cover is committed, before Pages has rebuilt.
   function coverSrc(rec) {
     if (freshCovers[rec.id]) return freshCovers[rec.id];
-    if (rec.cover) return RAW + rec.cover + "?v=" + encodeURIComponent(rec.coverV || "1");
+    if (rec.cover) return rec.cover + "?v=" + encodeURIComponent(rec.coverV || "1");
     return null;
+  }
+  function coverFallback(rec) {
+    return rec.cover ? RAW + rec.cover : "";
   }
 
   // ---- data ----
@@ -600,7 +605,8 @@ a { color: var(--accent); }
   function cardHtml(r) {
     var src = coverSrc(r);
     var cover = src
-      ? '<img src="' + escapeHtml(src) + '" alt="' + escapeHtml((r.artist || "Unidentified") + " cover") + '" loading="lazy">'
+      ? '<img src="' + escapeHtml(src) + '" data-raw="' + escapeHtml(coverFallback(r)) + '" alt="' +
+        escapeHtml((r.artist || "Unidentified") + " cover") + '" loading="lazy">'
       : VINYL;
     var meta = [r.label, r.catalogNo, r.year, r.format].filter(Boolean);
     var genres = (r.genres || []).map(function (g) { return '<span class="chip">' + escapeHtml(g) + "</span>"; }).join("");
@@ -926,6 +932,14 @@ a { color: var(--accent); }
       if (err && err.status) showToast(failureText(err.status));
     });
   });
+
+  els["cards"].addEventListener("error", function (e) {
+    var img = e.target;
+    if (img && img.tagName === "IMG" && img.dataset.raw && !img.dataset.fellBack) {
+      img.dataset.fellBack = "1";
+      img.src = img.dataset.raw;
+    }
+  }, true);
 
   els["cards"].addEventListener("click", function (e) {
     var ed = e.target.closest("[data-edit]");
