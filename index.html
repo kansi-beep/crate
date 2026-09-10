@@ -1,0 +1,987 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#efede6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131214" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Crate">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="icon" href="icon-192.png">
+<title>Crate Index</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+
+:root {
+  --paper: #efede6;
+  --surface: #ffffff;
+  --surface-2: #f7f5ef;
+  --ink: #17171a;
+  --ink-soft: #5b5954;
+  --ink-faint: #8c8a82;
+  --line: #dad7cc;
+  --accent: #0e8c82;
+  --accent-ink: #06403b;
+  --accent-soft: #def0ee;
+  --amber: #b5691a;
+  --amber-soft: #f7e7d3;
+  --danger: #af3131;
+  --radius: 10px;
+  --shadow: 0 1px 2px rgba(23,23,26,0.07), 0 10px 28px -14px rgba(23,23,26,0.22);
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #131214; --surface: #1c1b1e; --surface-2: #201f22;
+    --ink: #edeae2; --ink-soft: #a6a39a; --ink-faint: #726f68; --line: #322f31;
+    --accent: #3fcfc0; --accent-ink: #cff6f0; --accent-soft: #17332f;
+    --amber: #e2954d; --amber-soft: #3a2a18; --danger: #d97878;
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 10px 28px -14px rgba(0,0,0,0.65);
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #131214; --surface: #1c1b1e; --surface-2: #201f22;
+  --ink: #edeae2; --ink-soft: #a6a39a; --ink-faint: #726f68; --line: #322f31;
+  --accent: #3fcfc0; --accent-ink: #cff6f0; --accent-soft: #17332f;
+  --amber: #e2954d; --amber-soft: #3a2a18; --danger: #d97878;
+  --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 10px 28px -14px rgba(0,0,0,0.65);
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: var(--font-body); font-size: 15px; line-height: 1.5;
+  -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%;
+}
+.page { max-width: 1120px; margin: 0 auto; padding: 24px 20px 64px; padding-bottom: max(64px, env(safe-area-inset-bottom)); }
+h1, h2 { font-family: var(--font-display); font-weight: 600; text-wrap: balance; margin: 0; }
+a { color: var(--accent); }
+
+.topbar { display: flex; align-items: flex-end; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.brand h1 { font-size: 30px; letter-spacing: -0.01em; }
+.brand .tagline { margin: 4px 0 0; color: var(--ink-soft); font-size: 14px; }
+.topbar-right { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.count { font-family: var(--font-mono); font-variant-numeric: tabular-nums; color: var(--ink-faint); font-size: 13px; }
+
+.btn {
+  font-family: var(--font-body); font-weight: 600; font-size: 14px; cursor: pointer;
+  border-radius: 8px; padding: 10px 16px; border: 1px solid transparent;
+  transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
+}
+.btn-primary { background: var(--accent); color: #ffffff; }
+.btn-primary:hover { transform: translateY(-1px); }
+.btn-primary[disabled] { opacity: 0.55; cursor: default; transform: none; }
+.btn-ghost { background: transparent; color: var(--ink-soft); border-color: var(--line); }
+.btn-ghost:hover { color: var(--ink); border-color: var(--ink-faint); }
+.btn-mini {
+  font-family: var(--font-body); font-size: 12px; font-weight: 500; cursor: pointer;
+  background: transparent; border: 1px dashed var(--line); color: var(--ink-soft);
+  border-radius: 7px; padding: 7px 11px;
+}
+.btn-mini:hover { border-color: var(--accent); color: var(--accent); }
+.icon-round {
+  width: 38px; height: 38px; border-radius: 999px; border: 1px solid var(--line);
+  background: var(--surface); color: var(--ink-soft); cursor: pointer; font-size: 15px; line-height: 1;
+  display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto;
+}
+.icon-round:hover { color: var(--ink); border-color: var(--ink-faint); }
+.btn:focus-visible, .chip:focus-visible, .input:focus-visible, .icon-btn:focus-visible,
+.btn-mini:focus-visible, .icon-round:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.how-it-works { margin: 20px 0; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 4px 16px; }
+.how-it-works summary { cursor: pointer; padding: 10px 0; font-weight: 600; font-size: 13.5px; color: var(--ink-soft); list-style: none; }
+.how-it-works summary::-webkit-details-marker { display: none; }
+.how-it-works summary::before { content: "\002B"; display: inline-block; width: 1.1em; color: var(--accent); font-weight: 700; }
+.how-it-works[open] summary::before { content: "\2212"; }
+.how-body { padding: 0 0 14px 1.1em; color: var(--ink-soft); font-size: 13.5px; }
+.how-body ol { margin: 8px 0 0; padding-left: 18px; }
+.how-body li + li { margin-top: 4px; }
+.how-body p { margin: 8px 0 0; }
+
+.toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 20px; }
+.input {
+  font-family: var(--font-body); font-size: 16px; color: var(--ink); background: var(--surface);
+  border: 1px solid var(--line); border-radius: 8px; padding: 9px 12px;
+}
+.input::placeholder { color: var(--ink-faint); }
+#search { flex: 1 1 220px; min-width: 170px; }
+#sort { font-size: 14px; }
+.input-narrow { width: 74px; text-align: center; font-family: var(--font-mono); }
+.bpm-filter { display: flex; align-items: center; gap: 6px; color: var(--ink-soft); font-size: 13px; }
+.bpm-dash { color: var(--ink-faint); }
+.genre-filter { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  font-family: var(--font-body); font-size: 12.5px; font-weight: 500; padding: 6px 11px; border-radius: 999px;
+  border: 1px solid var(--line); background: var(--surface); color: var(--ink-soft); cursor: pointer;
+  transition: background 120ms ease, color 120ms ease, border-color 120ms ease;
+}
+.chip[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent-ink); border-color: var(--accent); }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; align-items: start; }
+.card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 14px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 10px; position: relative;
+}
+.card-cover { aspect-ratio: 1 / 1; border-radius: 7px; overflow: hidden; background: var(--surface-2); display: flex; align-items: center; justify-content: center; }
+.card-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.card-cover svg { width: 58%; height: 58%; }
+.card-title { font-weight: 600; font-size: 14.5px; }
+.card-title .t-artist { display: block; }
+.card-title .t-track { display: block; font-style: italic; color: var(--ink-soft); font-weight: 400; }
+.card-meta { font-size: 12px; color: var(--ink-faint); }
+.card-genres { display: flex; flex-wrap: wrap; gap: 5px; }
+.card-genres .chip { padding: 3px 9px; font-size: 11px; cursor: default; }
+.card-bpm {
+  position: absolute; top: 12px; right: 12px; font-family: var(--font-mono); font-variant-numeric: tabular-nums;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 3px 7px; font-size: 12px; color: var(--ink-soft);
+}
+.card-tracks { display: flex; flex-direction: column; gap: 5px; border-top: 1px dashed var(--line); padding-top: 9px; }
+.track-row { display: flex; align-items: baseline; gap: 8px; font-size: 12px; }
+.track-pos { font-family: var(--font-mono); color: var(--ink-faint); flex: 0 0 auto; min-width: 15px; }
+.track-name { flex: 1; color: var(--ink-soft); overflow-wrap: anywhere; }
+.track-bpm { font-family: var(--font-mono); font-variant-numeric: tabular-nums; color: var(--ink); flex: 0 0 auto; }
+.track-bpm.hit { color: var(--accent); font-weight: 500; }
+.track-bpm.unset { color: var(--ink-faint); }
+.track-dur { font-family: var(--font-mono); color: var(--ink-faint); font-size: 11px; flex: 0 0 auto; }
+.card-notes { font-size: 12.5px; color: var(--ink-soft); border-top: 1px dashed var(--line); padding-top: 8px; }
+.card-actions { display: flex; gap: 6px; justify-content: flex-end; }
+.icon-btn { background: none; border: 1px solid transparent; color: var(--ink-faint); font-size: 12px; cursor: pointer; padding: 5px 9px; border-radius: 6px; }
+.icon-btn:hover { color: var(--ink); background: var(--surface-2); }
+.icon-btn.danger:hover { color: var(--danger); }
+
+.pending-bar {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  background: var(--amber-soft); border: 1px solid var(--amber); border-radius: var(--radius);
+  padding: 10px 14px; margin-bottom: 18px;
+}
+.pending-count { color: var(--amber); font-size: 13px; font-weight: 600; flex: 1 1 auto; }
+.pending-bar .btn-mini { border-color: var(--amber); color: var(--amber); border-style: solid; background: var(--surface); }
+.pending-bar .btn-mini:hover { border-color: var(--amber); color: var(--ink); }
+.pending-bar .btn-mini[aria-pressed="true"] { background: var(--amber); color: var(--paper); }
+.chip-pending {
+  display: inline-block; font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: 999px;
+  background: var(--amber-soft); color: var(--amber); border: 1px solid var(--amber); align-self: flex-start;
+}
+.t-artist.unidentified { color: var(--ink-faint); font-style: italic; font-weight: 500; }
+
+.cover-field { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 14px; }
+.cover-preview {
+  width: 88px; height: 88px; flex: 0 0 auto; border-radius: 8px; overflow: hidden;
+  background: var(--surface-2); border: 1px dashed var(--line);
+  display: flex; align-items: center; justify-content: center;
+}
+.cover-preview img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.cover-preview .cover-hint { font-size: 10.5px; color: var(--ink-faint); text-align: center; padding: 0 6px; line-height: 1.35; }
+.cover-actions { display: flex; flex-direction: column; gap: 6px; align-items: flex-start; padding-top: 2px; }
+.cover-note { font-size: 11.5px; color: var(--ink-faint); max-width: 250px; }
+
+.empty-state { text-align: center; padding: 48px 20px; color: var(--ink-soft); }
+.empty-state svg { width: 84px; height: 84px; margin-bottom: 14px; opacity: 0.8; }
+.empty-state h2 { font-size: 19px; margin-bottom: 6px; }
+.empty-state p { margin: 0 0 18px; font-size: 14px; }
+
+.status-note { color: var(--ink-faint); font-size: 13px; text-align: center; margin: 18px 0 0; }
+.foot { margin-top: 40px; border-top: 1px solid var(--line); padding-top: 16px; }
+.foot p { color: var(--ink-faint); font-size: 12.5px; margin: 0; }
+
+.modal-backdrop {
+  position: fixed; inset: 0; background: rgba(19,18,20,0.5); display: flex; align-items: center; justify-content: center;
+  padding: 16px; z-index: 50;
+}
+.modal {
+  background: var(--surface); border-radius: 14px; padding: 22px; width: 100%; max-width: 540px;
+  max-height: 88vh; overflow-y: auto; box-shadow: var(--shadow);
+}
+.modal h2 { font-size: 20px; margin-bottom: 14px; }
+.modal p.modal-intro { margin: 0 0 14px; font-size: 13px; color: var(--ink-soft); }
+.field-row { display: flex; gap: 10px; }
+.field { display: flex; flex-direction: column; gap: 4px; font-size: 12.5px; color: var(--ink-soft); margin-bottom: 12px; flex: 1; }
+.field-narrow { flex: 0 0 auto; width: 92px; }
+.field input, .field select, .field textarea, .track-edit-row input {
+  font-family: var(--font-body); font-size: 16px; color: var(--ink); background: var(--surface-2);
+  border: 1px solid var(--line); border-radius: 7px; padding: 9px 10px; width: 100%;
+}
+.field textarea { resize: vertical; font-family: var(--font-body); }
+.tracks-label { font-size: 12.5px; color: var(--ink-soft); display: block; margin-bottom: 6px; }
+.tracks-label small { color: var(--ink-faint); }
+.tracks-editor { display: flex; flex-direction: column; gap: 6px; margin-bottom: 8px; }
+.track-edit-row { display: flex; gap: 6px; align-items: center; }
+.track-edit-row .t-pos { flex: 0 0 50px; text-align: center; font-family: var(--font-mono); }
+.track-edit-row .t-name { flex: 1 1 110px; min-width: 80px; }
+.track-edit-row .t-bpm { flex: 0 0 66px; text-align: center; font-family: var(--font-mono); }
+.track-edit-row .t-dur { flex: 0 0 66px; text-align: center; font-family: var(--font-mono); }
+.track-remove { flex: 0 0 auto; background: none; border: none; color: var(--ink-faint); cursor: pointer; font-size: 17px; padding: 4px 7px; border-radius: 6px; }
+.track-remove:hover { color: var(--danger); }
+.modal-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 16px; align-items: center; }
+.modal-actions .spacer { flex: 1 1 auto; }
+
+.key-state { font-size: 12.5px; padding: 8px 11px; border-radius: 8px; margin-bottom: 14px; }
+.key-state.on { background: var(--accent-soft); color: var(--accent-ink); }
+.key-state.off { background: var(--surface-2); color: var(--ink-soft); }
+
+.toast {
+  position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: var(--ink); color: var(--paper);
+  padding: 11px 18px; border-radius: 8px; font-size: 13.5px; z-index: 60; box-shadow: var(--shadow);
+  max-width: calc(100vw - 32px); text-align: center;
+}
+.saving { position: fixed; top: 0; left: 0; height: 3px; background: var(--accent); width: 0; transition: width 300ms ease; z-index: 70; }
+.saving.active { width: 85%; }
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+@media (max-width: 560px) {
+  .field-row { flex-wrap: wrap; }
+  .field-narrow { width: 100%; }
+  .topbar { align-items: flex-start; }
+  .track-edit-row { flex-wrap: wrap; }
+  .brand h1 { font-size: 26px; }
+}
+
+</style>
+</head>
+<body>
+
+<div class="saving" id="saving-bar"></div>
+<div class="page">
+  <header class="topbar">
+    <div class="brand">
+      <h1>Crate Index</h1>
+      <p class="tagline">Your vinyl, searchable by genre &amp; BPM</p>
+    </div>
+    <div class="topbar-right">
+      <span class="count" id="record-count">loading...</span>
+      <button class="btn btn-ghost" id="btn-snap" type="button" hidden>Snap a cover</button>
+      <button class="btn btn-primary" id="btn-add" type="button" hidden>+ Add record</button>
+      <button class="icon-round" id="btn-settings" type="button" title="Editing key" aria-label="Editing key">&#9881;</button>
+      <input type="file" id="quick-photo" accept="image/*" hidden>
+    </div>
+  </header>
+
+  <details class="how-it-works">
+    <summary>How this works</summary>
+    <div class="how-body">
+      <ol>
+        <li><strong>Snap a cover</strong> &mdash; photograph the front sleeve and save. You don't have to type anything; the record lands here marked <em>Needs details</em>.</li>
+        <li>Claude fills the pending ones in overnight &mdash; artist, title, label, catalogue number, year, genres and tracklist &mdash; from the photo.</li>
+        <li>Or tap <strong>+ Add record</strong> and type it in yourself. Add a row per mix so each one carries its own BPM.</li>
+      </ol>
+      <p>The BPM filter matches any mix on a record, so 126&ndash;130 will surface a record whose B-side sits in that range.</p>
+      <p>Adding and editing needs the key set once per phone, under the gear. Without it the crate is read-only.</p>
+    </div>
+  </details>
+
+  <div class="toolbar" id="toolbar" hidden>
+    <input type="search" id="search" class="input" placeholder="Search artist, title, label, mix..." aria-label="Search collection">
+    <div class="genre-filter" id="genre-chips" aria-label="Filter by genre"></div>
+    <div class="bpm-filter">
+      <label for="bpm-min">BPM</label>
+      <input type="number" id="bpm-min" class="input input-narrow" placeholder="min" min="0" max="300" inputmode="numeric">
+      <span class="bpm-dash">&ndash;</span>
+      <input type="number" id="bpm-max" class="input input-narrow" placeholder="max" min="0" max="300" inputmode="numeric">
+    </div>
+    <select id="sort" class="input" aria-label="Sort by">
+      <option value="artist">Artist A&ndash;Z</option>
+      <option value="bpm">BPM: low to high</option>
+      <option value="added">Recently added</option>
+    </select>
+  </div>
+
+  <div class="pending-bar" id="pending-bar" hidden>
+    <span class="pending-count" id="pending-count"></span>
+    <button type="button" class="btn-mini" id="btn-filter-pending" aria-pressed="false">Show only these</button>
+    <button type="button" class="btn-mini" id="btn-copy-request">Copy request for Claude</button>
+  </div>
+
+  <div id="empty-state" class="empty-state">
+    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<circle cx="50" cy="50" r="46" fill="var(--ink)" opacity="0.9"/>
+<circle cx="50" cy="50" r="46" stroke="var(--ink-faint)" stroke-width="0.6" opacity="0.5"/>
+<circle cx="50" cy="50" r="36" stroke="var(--ink-faint)" stroke-width="0.6" opacity="0.5"/>
+<circle cx="50" cy="50" r="26" stroke="var(--ink-faint)" stroke-width="0.6" opacity="0.5"/>
+<circle cx="50" cy="50" r="16" fill="var(--accent)"/>
+<circle cx="50" cy="50" r="3" fill="var(--paper)"/>
+</svg>
+    <h2>Loading the crate...</h2>
+    <p>Fetching the current record list.</p>
+    <button class="btn btn-primary" id="btn-add-empty" type="button" hidden>+ Add record</button>
+  </div>
+
+  <div id="cards" class="grid" hidden></div>
+
+  <p class="status-note" id="status-note" hidden></p>
+
+  <footer class="foot">
+    <p id="foot-note">Scan the sticker by the shelf to open this. Add to your home screen for a one-tap crate.</p>
+  </footer>
+</div>
+
+<div class="modal-backdrop" id="modal-backdrop" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" id="modal">
+    <h2 id="modal-title">Add record</h2>
+    <form id="record-form">
+      <input type="hidden" id="f-id">
+
+      <div class="cover-field">
+        <div class="cover-preview" id="cover-preview"><span class="cover-hint">No cover yet</span></div>
+        <div class="cover-actions">
+          <label class="btn-mini file-label" for="f-photo">Take / choose photo</label>
+          <input type="file" id="f-photo" accept="image/*" hidden>
+          <button type="button" class="btn-mini" id="btn-remove-photo" hidden>Remove photo</button>
+          <p class="cover-note">A photo on its own is enough &mdash; save it and Claude fills in the rest overnight.</p>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <label class="field"><span>Artist</span><input type="text" id="f-artist" autocomplete="off"></label>
+        <label class="field"><span>Title</span><input type="text" id="f-title" autocomplete="off"></label>
+      </div>
+      <div class="field-row">
+        <label class="field"><span>Label</span><input type="text" id="f-label" autocomplete="off"></label>
+        <label class="field"><span>Catalog #</span><input type="text" id="f-catalog" autocomplete="off"></label>
+      </div>
+      <div class="field-row">
+        <label class="field field-narrow"><span>Format</span>
+          <select id="f-format">
+            <option value="12&quot;">12&quot;</option>
+            <option value="LP">LP</option>
+            <option value="7&quot;">7&quot;</option>
+            <option value="10&quot;">10&quot;</option>
+            <option value="EP">EP</option>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+        <label class="field field-narrow"><span>Year</span><input type="number" id="f-year" min="1900" max="2100"></label>
+        <label class="field"><span>Genres <small>(comma-separated)</small></span><input type="text" id="f-genres" placeholder="Deep House, Disco" autocomplete="off"></label>
+      </div>
+
+      <span class="tracks-label">Tracks &amp; BPM <small>(one row per mix &mdash; position, name, BPM, length)</small></span>
+      <div class="tracks-editor" id="tracks-editor"></div>
+      <button type="button" class="btn-mini" id="btn-add-track">+ Add track</button>
+
+      <label class="field" style="margin-top:14px"><span>Notes</span><textarea id="f-notes" rows="2" placeholder="B-side is the one, needs a clean..."></textarea></label>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-ghost" id="btn-cancel">Cancel</button>
+        <button type="submit" class="btn btn-primary" id="btn-save">Save record</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="settings-backdrop" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="settings-title">
+    <h2 id="settings-title">Editing key</h2>
+    <div class="key-state" id="key-state"></div>
+    <p class="modal-intro">Paste the key once on each phone that should be able to add or change records. It stays in this browser and is never shown on the page. Without it, the crate is read-only.</p>
+    <label class="field"><span>Key</span><input type="password" id="f-token" placeholder="github_pat_..." autocomplete="off" spellcheck="false"></label>
+    <div class="modal-actions">
+      <button type="button" class="btn btn-ghost" id="btn-forget-key">Remove from this phone</button>
+      <span class="spacer"></span>
+      <button type="button" class="btn btn-ghost" id="btn-settings-close">Close</button>
+      <button type="button" class="btn btn-primary" id="btn-save-key">Save key</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script>
+
+(function () {
+  "use strict";
+
+  var REPO = "kansi-beep/crate";
+  var BRANCH = "main";
+  var API = "https://api.github.com/repos/" + REPO + "/contents/";
+  var RAW = "https://raw.githubusercontent.com/" + REPO + "/" + BRANCH + "/";
+  var TOKEN_KEY = "crateIndexKey";
+
+  var records = [];
+  var recordsSha = null;
+  var token = null;
+  var freshCovers = {};        // id -> data URL, so a just-added cover shows before the CDN has it
+  var filters = { q: "", genres: {}, bpmMin: null, bpmMax: null, pendingOnly: false };
+  var sortBy = "artist";
+  var editingId = null;
+  var pendingPhoto = null;
+  var lastFocused = null;
+  var writable = false;
+
+  try { token = localStorage.getItem(TOKEN_KEY); } catch (e) { token = null; }
+
+  var els = {};
+  ["record-count","btn-add","btn-snap","quick-photo","btn-add-empty","btn-settings","toolbar","search",
+   "genre-chips","bpm-min","bpm-max","sort","cards","empty-state","status-note","pending-bar","pending-count",
+   "btn-filter-pending","btn-copy-request","modal-backdrop","modal-title","record-form","btn-cancel","btn-save",
+   "btn-add-track","tracks-editor","toast","cover-preview","f-photo","btn-remove-photo","saving-bar","foot-note",
+   "f-id","f-artist","f-title","f-label","f-catalog","f-format","f-year","f-genres","f-notes",
+   "settings-backdrop","f-token","btn-save-key","btn-forget-key","btn-settings-close","key-state"
+  ].forEach(function (id) {
+    els[id] = document.getElementById(id);
+  });
+
+  var VINYL = document.querySelector("#empty-state svg").outerHTML;
+
+  function escapeHtml(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  function titleCaseGenre(g) {
+    return g.replace(/\s+/g, " ").trim().replace(/\w\S*/g, function (t) {
+      return t.charAt(0).toUpperCase() + t.slice(1).toLowerCase();
+    });
+  }
+  function b64ToText(b64) {
+    var bin = atob(String(b64).replace(/\s/g, ""));
+    var bytes = new Uint8Array(bin.length);
+    for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+    return new TextDecoder("utf-8").decode(bytes);
+  }
+  function textToB64(str) {
+    var bytes = new TextEncoder().encode(str);
+    var bin = "";
+    for (var i = 0; i < bytes.length; i++) bin += String.fromCharCode(bytes[i]);
+    return btoa(bin);
+  }
+
+  function headers() {
+    var h = { "Accept": "application/vnd.github+json" };
+    if (token) h["Authorization"] = "Bearer " + token;
+    return h;
+  }
+
+  function coverSrc(rec) {
+    if (freshCovers[rec.id]) return freshCovers[rec.id];
+    if (rec.cover) return RAW + rec.cover + "?v=" + encodeURIComponent(rec.coverV || "1");
+    return null;
+  }
+
+  // ---- data ----
+
+  function fetchRecords() {
+    return fetch(API + "records.json?ref=" + BRANCH + "&nocache=" + Date.now(), { headers: headers(), cache: "no-store" })
+      .then(function (r) {
+        if (!r.ok) throw new Error("api " + r.status);
+        return r.json();
+      })
+      .then(function (j) {
+        return { sha: j.sha, arr: JSON.parse(b64ToText(j.content)) };
+      })
+      .catch(function () {
+        // Fall back to the published copy (e.g. unauthenticated rate limit)
+        return fetch("records.json?nocache=" + Date.now(), { cache: "no-store" })
+          .then(function (r) { return r.json(); })
+          .then(function (arr) { return { sha: null, arr: arr }; });
+      });
+  }
+
+  function putFile(path, contentB64, sha, message) {
+    var body = { message: message, content: contentB64, branch: BRANCH };
+    if (sha) body.sha = sha;
+    return fetch(API + path, {
+      method: "PUT",
+      headers: Object.assign(headers(), { "Content-Type": "application/json" }),
+      body: JSON.stringify(body)
+    });
+  }
+
+  function failureText(status) {
+    if (status === 401 || status === 403) return "That key was rejected — check it under the gear.";
+    if (status === 404) return "Couldn't reach the crate's storage.";
+    if (status === 409 || status === 422) return "Someone else saved at the same moment — try again.";
+    return "Couldn't save (error " + status + ").";
+  }
+
+  // Re-reads before writing, so the newest sha is always used and edits from the
+  // other phone are never clobbered.
+  function commitChange(applyFn, message) {
+    busy(true);
+    return fetchRecords().then(function (fresh) {
+      var arr = applyFn(fresh.arr.slice());
+      var json = JSON.stringify(arr, null, 1);
+      return putFile("records.json", textToB64(json), fresh.sha, message).then(function (res) {
+        if (!res.ok) throw { status: res.status };
+        return res.json();
+      }).then(function (j) {
+        recordsSha = j.content && j.content.sha;
+        records = arr;
+        render();
+        busy(false);
+        showToast("Saved.");
+      });
+    }).catch(function (err) {
+      busy(false);
+      showToast(err && err.status ? failureText(err.status) : "Couldn't save — you may be offline.");
+      throw err;
+    });
+  }
+
+  function busy(on) {
+    els["saving-bar"].classList.toggle("active", !!on);
+    if (els["btn-save"]) els["btn-save"].disabled = !!on;
+  }
+
+  // ---- derived ----
+
+  function needsDetails(r) { return !r.label || !(r.genres || []).length || !r.artist || !r.title; }
+  function pendingRecords() { return records.filter(needsDetails); }
+  function trackBpms(r) {
+    var list = (r.tracks || []).map(function (t) { return t.bpm; }).filter(function (b) { return b != null; });
+    if (r.bpm != null) list.push(r.bpm);
+    return list;
+  }
+  function sortKeyBpm(r) { var l = trackBpms(r); return l.length ? Math.min.apply(null, l) : null; }
+  function allGenres() {
+    var set = {};
+    records.forEach(function (r) { (r.genres || []).forEach(function (g) { set[g] = true; }); });
+    return Object.keys(set).sort(function (a, b) { return a.localeCompare(b); });
+  }
+  function bpmFilterActive() { return filters.bpmMin != null || filters.bpmMax != null; }
+  function bpmInRange(b) {
+    if (b == null) return false;
+    if (filters.bpmMin != null && b < filters.bpmMin) return false;
+    if (filters.bpmMax != null && b > filters.bpmMax) return false;
+    return true;
+  }
+  function matches(r) {
+    if (filters.q) {
+      var names = (r.tracks || []).map(function (t) { return t.name; }).join(" ");
+      var hay = [r.artist, r.title, r.label, r.catalogNo, r.notes, names].join(" ").toLowerCase();
+      if (hay.indexOf(filters.q) === -1) return false;
+    }
+    var active = Object.keys(filters.genres).filter(function (g) { return filters.genres[g]; });
+    if (active.length) {
+      var rg = r.genres || [];
+      if (!active.some(function (g) { return rg.indexOf(g) !== -1; })) return false;
+    }
+    if (bpmFilterActive() && !trackBpms(r).some(bpmInRange)) return false;
+    if (filters.pendingOnly && !needsDetails(r)) return false;
+    return true;
+  }
+  function sorted(list) {
+    var copy = list.slice();
+    if (sortBy === "bpm") {
+      copy.sort(function (a, b) {
+        var ka = sortKeyBpm(a), kb = sortKeyBpm(b);
+        if (ka == null && kb == null) return 0;
+        if (ka == null) return 1;
+        if (kb == null) return -1;
+        return ka - kb;
+      });
+    } else if (sortBy === "added") {
+      copy.sort(function (a, b) { return (b.added || "").localeCompare(a.added || ""); });
+    } else {
+      copy.sort(function (a, b) {
+        return (a.artist || "").localeCompare(b.artist || "") || (a.title || "").localeCompare(b.title || "");
+      });
+    }
+    return copy;
+  }
+
+  // ---- render ----
+
+  function renderChips() {
+    els["genre-chips"].innerHTML = allGenres().map(function (g) {
+      return '<button type="button" class="chip" data-genre="' + escapeHtml(g) + '" aria-pressed="' + !!filters.genres[g] + '">' + escapeHtml(g) + "</button>";
+    }).join("");
+  }
+  function bpmBadge(r) {
+    var l = trackBpms(r);
+    if (!l.length) return "&mdash;";
+    var lo = Math.min.apply(null, l), hi = Math.max.apply(null, l);
+    return lo === hi ? String(lo) : lo + "&ndash;" + hi;
+  }
+  function cardHtml(r) {
+    var src = coverSrc(r);
+    var cover = src
+      ? '<img src="' + escapeHtml(src) + '" alt="' + escapeHtml((r.artist || "Unidentified") + " cover") + '" loading="lazy">'
+      : VINYL;
+    var meta = [r.label, r.catalogNo, r.year, r.format].filter(Boolean);
+    var genres = (r.genres || []).map(function (g) { return '<span class="chip">' + escapeHtml(g) + "</span>"; }).join("");
+    var tracks = (r.tracks || []).length
+      ? '<div class="card-tracks">' + r.tracks.map(function (t) {
+          var hit = bpmFilterActive() && bpmInRange(t.bpm);
+          return '<div class="track-row"><span class="track-pos">' + escapeHtml(t.pos || "") + "</span>" +
+            '<span class="track-name">' + escapeHtml(t.name || "") + "</span>" +
+            (t.dur ? '<span class="track-dur">' + escapeHtml(t.dur) + "</span>" : "") +
+            '<span class="track-bpm' + (hit ? " hit" : "") + (t.bpm == null ? " unset" : "") + '">' +
+            escapeHtml(t.bpm != null ? t.bpm : "—") + "</span></div>";
+        }).join("") + "</div>"
+      : "";
+    var artist = r.artist
+      ? '<span class="t-artist">' + escapeHtml(r.artist) + "</span>"
+      : '<span class="t-artist unidentified">Not identified yet</span>';
+    var actions = writable
+      ? '<div class="card-actions"><button type="button" class="icon-btn" data-edit="' + escapeHtml(r.id) + '">Edit</button>' +
+        '<button type="button" class="icon-btn danger" data-delete="' + escapeHtml(r.id) + '">Delete</button></div>'
+      : "";
+    return '<article class="card">' +
+      '<div class="card-bpm" title="BPM">' + bpmBadge(r) + "</div>" +
+      '<div class="card-cover">' + cover + "</div>" +
+      '<div class="card-title">' + artist + (r.title ? '<span class="t-track">' + escapeHtml(r.title) + "</span>" : "") + "</div>" +
+      (needsDetails(r) ? '<span class="chip-pending">Needs details</span>' : "") +
+      (meta.length ? '<div class="card-meta">' + escapeHtml(meta.join(" · ")) + "</div>" : "") +
+      (genres ? '<div class="card-genres">' + genres + "</div>" : "") +
+      tracks +
+      (r.notes ? '<div class="card-notes">' + escapeHtml(r.notes) + "</div>" : "") +
+      actions + "</article>";
+  }
+
+  function render() {
+    els["record-count"].textContent = records.length + (records.length === 1 ? " record" : " records");
+    renderChips();
+    els["toolbar"].hidden = records.length === 0;
+    els["btn-add"].hidden = !writable;
+    els["btn-snap"].hidden = !writable;
+    els["btn-add-empty"].hidden = !writable;
+    els["status-note"].hidden = writable;
+    els["status-note"].textContent = "Read-only on this phone. Tap the gear and paste the key to add records.";
+
+    var pending = pendingRecords().length;
+    els["pending-bar"].hidden = pending === 0;
+    if (pending) {
+      els["pending-count"].textContent = pending === 1 ? "1 record is waiting on its details"
+        : pending + " records are waiting on their details";
+      els["btn-filter-pending"].setAttribute("aria-pressed", String(filters.pendingOnly));
+    } else if (filters.pendingOnly) {
+      filters.pendingOnly = false;
+    }
+
+    var visible = sorted(records.filter(matches));
+    if (!records.length) {
+      els["empty-state"].querySelector("h2").textContent = "No records yet";
+      els["empty-state"].querySelector("p").textContent = "Tap Snap a cover to photograph your first sleeve.";
+      els["empty-state"].hidden = false;
+      els["cards"].hidden = true;
+      els["cards"].innerHTML = "";
+    } else if (!visible.length) {
+      els["empty-state"].querySelector("h2").textContent = "No matches";
+      els["empty-state"].querySelector("p").textContent = "Try clearing a filter or the search box.";
+      els["empty-state"].hidden = false;
+      els["cards"].hidden = true;
+      els["cards"].innerHTML = "";
+    } else {
+      els["empty-state"].hidden = true;
+      els["cards"].hidden = false;
+      els["cards"].innerHTML = visible.map(cardHtml).join("");
+    }
+  }
+
+  function showToast(msg) {
+    els["toast"].textContent = msg;
+    els["toast"].hidden = false;
+    clearTimeout(showToast._t);
+    showToast._t = setTimeout(function () { els["toast"].hidden = true; }, 3400);
+  }
+
+  // ---- photos ----
+
+  function photoToDataUrl(file, cb) {
+    var reader = new FileReader();
+    reader.onload = function () {
+      var img = new Image();
+      img.onload = function () {
+        var max = 640;
+        var scale = Math.min(1, max / Math.max(img.width, img.height));
+        var w = Math.round(img.width * scale), h = Math.round(img.height * scale);
+        var c = document.createElement("canvas");
+        c.width = w; c.height = h;
+        c.getContext("2d").drawImage(img, 0, 0, w, h);
+        var out = c.toDataURL("image/jpeg", 0.75);
+        if (out.length > 400000) out = c.toDataURL("image/jpeg", 0.6);
+        cb(out);
+      };
+      img.onerror = function () { cb(null); };
+      img.src = reader.result;
+    };
+    reader.onerror = function () { cb(null); };
+    reader.readAsDataURL(file);
+  }
+
+  function setCoverPreview(url) {
+    pendingPhoto = url || null;
+    if (pendingPhoto) {
+      els["cover-preview"].innerHTML = '<img src="' + escapeHtml(pendingPhoto) + '" alt="Cover preview">';
+      els["btn-remove-photo"].hidden = false;
+    } else {
+      els["cover-preview"].innerHTML = '<span class="cover-hint">No cover yet</span>';
+      els["btn-remove-photo"].hidden = true;
+    }
+  }
+
+  // ---- modal ----
+
+  function trackRowHtml(t) {
+    t = t || {};
+    return '<div class="track-edit-row">' +
+      '<input type="text" class="t-pos" placeholder="A" value="' + escapeHtml(t.pos || "") + '" aria-label="Position">' +
+      '<input type="text" class="t-name" placeholder="Mix / track name" value="' + escapeHtml(t.name || "") + '" aria-label="Track name">' +
+      '<input type="number" class="t-bpm" placeholder="bpm" min="0" max="300" value="' + (t.bpm != null ? t.bpm : "") + '" aria-label="BPM">' +
+      '<input type="text" class="t-dur" placeholder="7:28" value="' + escapeHtml(t.dur || "") + '" aria-label="Length">' +
+      '<button type="button" class="track-remove" aria-label="Remove track">&times;</button></div>';
+  }
+  function readTracks() {
+    return Array.prototype.slice.call(els["tracks-editor"].querySelectorAll(".track-edit-row")).map(function (row) {
+      var b = row.querySelector(".t-bpm").value;
+      return {
+        pos: row.querySelector(".t-pos").value.trim(),
+        name: row.querySelector(".t-name").value.trim(),
+        bpm: b ? Number(b) : null,
+        dur: row.querySelector(".t-dur").value.trim()
+      };
+    }).filter(function (t) { return t.name || t.bpm != null || t.dur; });
+  }
+  function findRecord(id) {
+    for (var i = 0; i < records.length; i++) if (records[i].id === id) return records[i];
+    return null;
+  }
+  function openModal(rec, photo) {
+    lastFocused = document.activeElement;
+    editingId = rec ? rec.id : null;
+    els["modal-title"].textContent = rec ? "Edit record" : "Add record";
+    setCoverPreview(photo || (rec ? coverSrc(rec) : null));
+    els["f-photo"].value = "";
+    els["f-id"].value = rec ? rec.id : "";
+    els["f-artist"].value = rec ? rec.artist || "" : "";
+    els["f-title"].value = rec ? rec.title || "" : "";
+    els["f-label"].value = rec ? rec.label || "" : "";
+    els["f-catalog"].value = rec ? rec.catalogNo || "" : "";
+    els["f-format"].value = rec ? rec.format || '12"' : '12"';
+    els["f-year"].value = rec && rec.year != null ? rec.year : "";
+    els["f-genres"].value = rec ? (rec.genres || []).join(", ") : "";
+    els["f-notes"].value = rec ? rec.notes || "" : "";
+    var tracks = rec && (rec.tracks || []).length ? rec.tracks : [{ pos: "A" }, { pos: "B" }];
+    els["tracks-editor"].innerHTML = tracks.map(trackRowHtml).join("");
+    els["modal-backdrop"].hidden = false;
+    els["f-artist"].focus();
+  }
+  function closeModal() {
+    els["modal-backdrop"].hidden = true;
+    editingId = null;
+    pendingPhoto = null;
+    if (lastFocused) lastFocused.focus();
+  }
+  function genId() { return "r" + Date.now().toString(36) + Math.random().toString(36).slice(2, 7); }
+
+  // ---- settings ----
+
+  function refreshKeyState() {
+    writable = !!token;
+    els["key-state"].className = "key-state " + (writable ? "on" : "off");
+    els["key-state"].textContent = writable
+      ? "Editing is enabled on this phone."
+      : "This phone is read-only.";
+  }
+  function openSettings() {
+    refreshKeyState();
+    els["f-token"].value = "";
+    els["settings-backdrop"].hidden = false;
+    els["f-token"].focus();
+  }
+
+  // ---- boot ----
+
+  refreshKeyState();
+  fetchRecords().then(function (res) {
+    recordsSha = res.sha;
+    records = res.arr || [];
+    render();
+  }).catch(function () {
+    els["empty-state"].querySelector("h2").textContent = "Couldn't load the crate";
+    els["empty-state"].querySelector("p").textContent = "Check your connection and reload.";
+  });
+
+  els["btn-add"].addEventListener("click", function () { openModal(null); });
+  els["btn-add-empty"].addEventListener("click", function () { openModal(null); });
+  els["btn-cancel"].addEventListener("click", closeModal);
+  els["modal-backdrop"].addEventListener("click", function (e) { if (e.target === els["modal-backdrop"]) closeModal(); });
+
+  els["btn-settings"].addEventListener("click", openSettings);
+  els["btn-settings-close"].addEventListener("click", function () { els["settings-backdrop"].hidden = true; });
+  els["settings-backdrop"].addEventListener("click", function (e) { if (e.target === els["settings-backdrop"]) els["settings-backdrop"].hidden = true; });
+  els["btn-save-key"].addEventListener("click", function () {
+    var v = els["f-token"].value.trim();
+    if (!v) { showToast("Paste the key first."); return; }
+    token = v;
+    try { localStorage.setItem(TOKEN_KEY, v); } catch (e) {}
+    refreshKeyState();
+    render();
+    els["settings-backdrop"].hidden = true;
+    showToast("Editing enabled on this phone.");
+  });
+  els["btn-forget-key"].addEventListener("click", function () {
+    token = null;
+    try { localStorage.removeItem(TOKEN_KEY); } catch (e) {}
+    refreshKeyState();
+    render();
+    showToast("Key removed from this phone.");
+  });
+
+  els["btn-snap"].addEventListener("click", function () { els["quick-photo"].click(); });
+  els["quick-photo"].addEventListener("change", function () {
+    var f = els["quick-photo"].files && els["quick-photo"].files[0];
+    els["quick-photo"].value = "";
+    if (!f) return;
+    showToast("Preparing the photo...");
+    photoToDataUrl(f, function (url) {
+      if (!url) { showToast("Couldn't read that photo — try another."); return; }
+      els["toast"].hidden = true;
+      openModal(null, url);
+    });
+  });
+  els["f-photo"].addEventListener("change", function () {
+    var f = els["f-photo"].files && els["f-photo"].files[0];
+    if (!f) return;
+    photoToDataUrl(f, function (url) {
+      if (!url) { showToast("Couldn't read that photo — try another."); return; }
+      setCoverPreview(url);
+    });
+  });
+  els["btn-remove-photo"].addEventListener("click", function () { setCoverPreview(null); els["f-photo"].value = ""; });
+
+  els["btn-add-track"].addEventListener("click", function () {
+    els["tracks-editor"].insertAdjacentHTML("beforeend", trackRowHtml({}));
+    var rows = els["tracks-editor"].querySelectorAll(".track-edit-row");
+    rows[rows.length - 1].querySelector(".t-pos").focus();
+  });
+  els["tracks-editor"].addEventListener("click", function (e) {
+    var rm = e.target.closest(".track-remove");
+    if (rm) rm.parentElement.remove();
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      if (!els["modal-backdrop"].hidden) closeModal();
+      if (!els["settings-backdrop"].hidden) els["settings-backdrop"].hidden = true;
+    }
+    if (e.key === "/" && els["modal-backdrop"].hidden && els["settings-backdrop"].hidden) {
+      var tag = (document.activeElement && document.activeElement.tagName) || "";
+      if (tag !== "INPUT" && tag !== "TEXTAREA" && tag !== "SELECT") { e.preventDefault(); els["search"].focus(); }
+    }
+  });
+
+  els["record-form"].addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (!writable) { showToast("This phone is read-only — add the key under the gear."); return; }
+
+    var existing = editingId ? findRecord(editingId) : null;
+    var id = editingId || genId();
+    var isNewPhoto = pendingPhoto && pendingPhoto.indexOf("data:") === 0;
+
+    var rec = {
+      id: id,
+      artist: els["f-artist"].value.trim(),
+      title: els["f-title"].value.trim(),
+      label: els["f-label"].value.trim(),
+      catalogNo: els["f-catalog"].value.trim(),
+      format: els["f-format"].value,
+      year: els["f-year"].value ? Number(els["f-year"].value) : null,
+      bpm: null,
+      genres: els["f-genres"].value.split(",").map(function (g) { return g.trim(); }).filter(Boolean).map(titleCaseGenre),
+      tracks: readTracks(),
+      notes: els["f-notes"].value.trim(),
+      cover: existing ? existing.cover || null : null,
+      coverV: existing ? existing.coverV : null,
+      added: existing ? existing.added : new Date().toISOString()
+    };
+    if (!pendingPhoto) { rec.cover = null; }
+    if (!rec.artist && !rec.title && !isNewPhoto && !rec.cover) {
+      showToast("Add a photo, or an artist and title, before saving.");
+      return;
+    }
+
+    var label = rec.artist || rec.title || "unidentified record";
+    var step = Promise.resolve();
+
+    if (isNewPhoto) {
+      var stamp = Date.now().toString(36);
+      var path = "covers/" + id + "-" + stamp + ".jpg";
+      var b64 = pendingPhoto.split(",")[1];
+      busy(true);
+      step = putFile(path, b64, null, "Add cover for " + label).then(function (res) {
+        if (!res.ok) throw { status: res.status };
+        rec.cover = path;
+        rec.coverV = stamp;
+        freshCovers[id] = pendingPhoto;
+      });
+    }
+
+    step.then(function () {
+      return commitChange(function (arr) {
+        var idx = -1;
+        for (var i = 0; i < arr.length; i++) if (arr[i].id === id) { idx = i; break; }
+        if (idx === -1) arr.push(rec); else arr[idx] = rec;
+        return arr;
+      }, (existing ? "Update " : "Add ") + label);
+    }).then(function () {
+      closeModal();
+    }).catch(function (err) {
+      busy(false);
+      if (err && err.status) showToast(failureText(err.status));
+    });
+  });
+
+  els["cards"].addEventListener("click", function (e) {
+    var ed = e.target.closest("[data-edit]");
+    var del = e.target.closest("[data-delete]");
+    if (ed) {
+      var rec = findRecord(ed.getAttribute("data-edit"));
+      if (rec) openModal(rec);
+    } else if (del) {
+      var id = del.getAttribute("data-delete");
+      if (del.dataset.confirm === "1") {
+        var r = findRecord(id);
+        commitChange(function (arr) {
+          return arr.filter(function (x) { return x.id !== id; });
+        }, "Remove " + ((r && (r.artist || r.title)) || "record"));
+      } else {
+        del.dataset.confirm = "1";
+        del.textContent = "Confirm?";
+        setTimeout(function () { del.dataset.confirm = "0"; del.textContent = "Delete"; }, 2500);
+      }
+    }
+  });
+
+  els["genre-chips"].addEventListener("click", function (e) {
+    var chip = e.target.closest("[data-genre]");
+    if (!chip) return;
+    var g = chip.getAttribute("data-genre");
+    filters.genres[g] = !filters.genres[g];
+    render();
+  });
+  els["btn-filter-pending"].addEventListener("click", function () { filters.pendingOnly = !filters.pendingOnly; render(); });
+  els["btn-copy-request"].addEventListener("click", function () {
+    var n = pendingRecords().length;
+    var msg = "Fill in the " + n + " record" + (n === 1 ? "" : "s") + " marked \"Needs details\" in my Crate Index (https://" +
+      REPO.split("/")[0] + ".github.io/" + REPO.split("/")[1] + "/): identify each from its cover photo, then add artist, title, label, catalogue number, year, genres and tracklist.";
+    var done = function () { showToast("Copied — paste it to Claude."); };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(msg).then(done).catch(function () { showToast("Couldn't copy."); });
+    } else { showToast("Couldn't copy."); }
+  });
+
+  els["search"].addEventListener("input", function () { filters.q = els["search"].value.trim().toLowerCase(); render(); });
+  els["bpm-min"].addEventListener("input", function () { filters.bpmMin = els["bpm-min"].value ? Number(els["bpm-min"].value) : null; render(); });
+  els["bpm-max"].addEventListener("input", function () { filters.bpmMax = els["bpm-max"].value ? Number(els["bpm-max"].value) : null; render(); });
+  els["sort"].addEventListener("change", function () { sortBy = els["sort"].value; render(); });
+
+  // Pick up the other phone's changes when the page comes back to the foreground.
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState !== "visible") return;
+    fetchRecords().then(function (res) {
+      recordsSha = res.sha;
+      records = res.arr || [];
+      render();
+    }).catch(function () {});
+  });
+})();
+
+</script>
+</body>
+</html>

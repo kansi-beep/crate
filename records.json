@@ -1,0 +1,890 @@
+[
+ {
+  "id": "rmthmjkdbau3o6",
+  "artist": "United Future Organisation",
+  "title": "The Planet Plan",
+  "label": "Talkin' Loud",
+  "catalogNo": "TLXX 27",
+  "format": "12\"",
+  "year": 1997,
+  "bpm": null,
+  "genres": [
+   "House",
+   "Future Jazz",
+   "Downtempo"
+  ],
+  "tracks": [
+   {
+    "pos": "A",
+    "name": "Yellow Productions Mix (Paris – Tokyo – San Salvador)",
+    "bpm": null,
+    "dur": "7:28"
+   },
+   {
+    "pos": "B",
+    "name": "Carl Craig Mix",
+    "bpm": null,
+    "dur": "9:24"
+   }
+  ],
+  "notes": "UK/Europe pressing, also numbered 568 051-1. A-side remix by Chris \"The French Kiss\" (Yellow Productions); B-side by Carl Craig with DJ Die.",
+  "added": "2026-08-31T19:21:27.263Z",
+  "cover": "covers/rmthmjkdbau3o6.jpg"
+ },
+ {
+  "id": "rmthnisqpcznfa",
+  "artist": "Nikhil Banerjee",
+  "title": "Master Of The Sitar",
+  "label": "AMIGA",
+  "catalogNo": "8 56 202",
+  "format": "LP",
+  "year": 1986,
+  "bpm": null,
+  "genres": [
+   "Indian Classical",
+   "Hindustani"
+  ],
+  "tracks": [
+   {
+    "pos": "A",
+    "name": "Raga Nat-Bhairab",
+    "bpm": null,
+    "dur": "23:20"
+   },
+   {
+    "pos": "B1",
+    "name": "Tabla Solo (Teental)",
+    "bpm": null,
+    "dur": "12:32"
+   },
+   {
+    "pos": "B2",
+    "name": "Baul Melody (Folk Tunes)",
+    "bpm": null,
+    "dur": "12:09"
+   }
+  ],
+  "notes": "GDR pressing, 1986 reissue. Tabla: Anindo Chatterjee; tambura: Ratan Mukherjee; produced by Shefali Nag. Discogs also lists a similar German edition — check the centre label if the catalogue number matters.",
+  "added": "2026-08-31T19:48:51.073Z",
+  "cover": "covers/rmthnisqpcznfa.jpg"
+ },
+ {
+  "id": "rmthnj3pdj1sw7",
+  "artist": "Pt. Ravi Shankar",
+  "title": "Sound Of Asiad '82 (The Music Of IX Asian Games, Delhi 1982)",
+  "label": "EMI",
+  "catalogNo": "ECSD 3065",
+  "format": "LP",
+  "year": 1982,
+  "bpm": null,
+  "genres": [
+   "Hindustani",
+   "Stage & Screen"
+  ],
+  "tracks": [
+   {
+    "pos": "A1",
+    "name": "Hymn Of The Asiad (Chorus - Hindi)",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "A2",
+    "name": "Chhatra Chaya (Dance Of The Umbrellas - Orissa)",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "A3",
+    "name": "English Recitation Of The Hymn",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "A4",
+    "name": "Pashu-Pakshi (Dance Of Animals And Birds)",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "A5",
+    "name": "The Finale (Welcome To APPU)",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B1",
+    "name": "Fanfare To The President (The Asiad March Past)",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B2",
+    "name": "Drum Beats",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B3",
+    "name": "The Asiad Musical Ride",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B4",
+    "name": "Shivarajah",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B5",
+    "name": "The Instrumental Version Of The Hymn",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B6",
+    "name": "Dummy Horses (Tamil Nadu)",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B7",
+    "name": "Dandiya Ras (Gujarat)",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B8",
+    "name": "Ghumar (Rajasthan)",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B9",
+    "name": "Bhangra (Punjab)",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B10",
+    "name": "The Retreat",
+    "bpm": null,
+    "dur": ""
+   }
+  ],
+  "notes": "Indian pressing, 1982. Ravi Shankar's score for the Delhi Asian Games — 'Drum Beats' and 'The Asiad Musical Ride' are the percussive cuts.",
+  "added": "2026-08-31T19:49:05.281Z",
+  "cover": "covers/rmthnj3pdj1sw7.jpg"
+ },
+ {
+  "id": "rmthnjqwtj3aey",
+  "artist": "Zed Bias + Injekta Present Phuturistix Feat. Jenna G",
+  "title": "Beautiful b/w Bugz In The Attic Remix",
+  "label": "Hospital Records",
+  "catalogNo": "nhs61",
+  "format": "12\"",
+  "year": 2003,
+  "bpm": null,
+  "genres": [
+   "Broken Beat",
+   "Future Jazz"
+  ],
+  "tracks": [
+   {
+    "pos": "A",
+    "name": "Beautiful",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B",
+    "name": "Beautiful (Bugz In The Attic Remix)",
+    "bpm": null,
+    "dur": ""
+   }
+  ],
+  "notes": "45 RPM. B-side remixed by Bugz In The Attic, mixed by Matt Lord. A separate 12\" of the same track carries London Elektricity and Nu:Tone remixes.",
+  "added": "2026-08-31T19:49:35.358Z",
+  "cover": "covers/rmthnjqwtj3aey.jpg"
+ },
+ {
+  "id": "rmthnk3w7hxqj0",
+  "artist": "Sun Ra",
+  "title": "Sun Ra Tribute",
+  "label": "",
+  "catalogNo": "",
+  "format": "12\"",
+  "year": null,
+  "bpm": null,
+  "genres": [
+   "Broken Beat",
+   "Future Jazz",
+   "Latin Jazz"
+  ],
+  "tracks": [],
+  "notes": "AWAITING LABEL SHOT — two Italian 12\"s share this title and Gianni Rossi's artwork: Mo'Smog 124007-8 (2003: Sun Ra 'Sattelites' Zero dB & Hectic Mix / Suntools 'Moonbeam' / Way-O 'African Bird') and Dejavu djv 3000007 (2005: three 'Stardust From Tomorrow' remixes, incl. Gerardo Frisina). Photograph the centre label to settle it.",
+  "added": "2026-08-31T19:49:52.183Z",
+  "cover": "covers/rmthnk3w7hxqj0.jpg"
+ },
+ {
+  "id": "rmtphzyjdz2y1z",
+  "artist": "",
+  "title": "",
+  "label": "",
+  "catalogNo": "",
+  "format": "12\"",
+  "year": null,
+  "bpm": null,
+  "genres": [
+   "Jazz"
+  ],
+  "tracks": [],
+  "notes": "AWAITING LABEL SHOT — front cover is a stitched-outline \"JAZZ\" wordmark over a photo of hands flipping through a record crate, with shop signage in shot (\"...im Laden\"); no artist, title, or catalogue text visible. A photo of the back cover or vinyl label would identify this one.",
+  "added": "2026-09-06T07:36:23.449Z",
+  "cover": "covers/rmtphzyjdz2y1z.jpg"
+ },
+ {
+  "id": "rmtpi080u8zwoo",
+  "artist": "",
+  "title": "",
+  "label": "",
+  "catalogNo": "",
+  "format": "12\"",
+  "year": null,
+  "bpm": null,
+  "genres": [],
+  "tracks": [],
+  "notes": "AWAITING LABEL SHOT — sci-fi/underwater cover art (a submerged futuristic city, leaping orca-like creatures) with a small green logo and a line of white text on a dark band across the top, too small to read at this photo's resolution. A closer photo of that top band, or of the back cover/label, would let me identify it.",
+  "added": "2026-09-06T07:36:35.742Z",
+  "cover": "covers/rmtpi080u8zwoo.jpg"
+ },
+ {
+  "id": "rmtpi0orl1fdof",
+  "artist": "",
+  "title": "पर्वत (Parvat)",
+  "label": "",
+  "catalogNo": "",
+  "format": "12\"",
+  "year": null,
+  "bpm": null,
+  "genres": [],
+  "tracks": [],
+  "notes": "AWAITING LABEL SHOT — cover reads only \"पर्वत\" (\"Parvat\"/\"Mountain\") over an illustrated mountain-sunset scene with children figures; no artist, label, or production credit visible on the front, and no matching release found. A photo of the back cover or spine would identify it.",
+  "added": "2026-09-06T07:36:57.441Z",
+  "cover": "covers/rmtpi0orl1fdof.jpg"
+ },
+ {
+  "id": "rmtpi0xneudxrs",
+  "artist": "",
+  "title": "",
+  "label": "",
+  "catalogNo": "",
+  "format": "12\"",
+  "year": null,
+  "bpm": null,
+  "genres": [],
+  "tracks": [],
+  "notes": "AWAITING LABEL SHOT — plain black-and-white photographic cover (a woman kneeling in ocean surf); no title, artist, or label text visible anywhere on the front. A photo of the back cover or spine would be needed to identify this one.",
+  "added": "2026-09-06T07:37:08.954Z",
+  "cover": "covers/rmtpi0xneudxrs.jpg"
+ },
+ {
+  "id": "rmtpi1kxj4mjku",
+  "artist": "",
+  "title": "",
+  "label": "",
+  "catalogNo": "",
+  "format": "12\"",
+  "year": null,
+  "bpm": null,
+  "genres": [],
+  "tracks": [],
+  "notes": "AWAITING LABEL SHOT — portrait cover of a bearded man in a white topi, with Urdu text that reads roughly \"کراچی کی فقیر\" (~\"Karachi's Faqeer\") and a small Latin subtitle underneath too blurry to read; no matching release found. A photo of the back cover or label would help pin this down.",
+  "added": "2026-09-06T07:37:39.127Z",
+  "cover": "covers/rmtpi1kxj4mjku.jpg"
+ },
+ {
+  "id": "rmtpi1s4ci6mdx",
+  "artist": "Visit Venus",
+  "title": "Magic Fly Variations",
+  "label": "Yo Mama's Recordings",
+  "catalogNo": "YO 4016-6",
+  "format": "12\"",
+  "year": 1996,
+  "bpm": null,
+  "genres": [
+   "Drum n Bass",
+   "Future Jazz",
+   "Downtempo"
+  ],
+  "tracks": [
+   {
+    "pos": "A1",
+    "name": "Stellar Jungle",
+    "bpm": null,
+    "dur": "7:12"
+   },
+   {
+    "pos": "A2",
+    "name": "Magic Low Fly",
+    "bpm": null,
+    "dur": "10:19"
+   },
+   {
+    "pos": "B1",
+    "name": "Digital Dub",
+    "bpm": null,
+    "dur": "12:28"
+   },
+   {
+    "pos": "B2",
+    "name": "Strassen Kaempfert",
+    "bpm": null,
+    "dur": "4:22"
+   }
+  ],
+  "notes": "German 12\", Yo Mama's Recordings. Barcode 4015698401660, LC 5507.",
+  "added": "2026-09-06T07:37:48.444Z",
+  "cover": "covers/rmtpi1s4ci6mdx.jpg"
+ },
+ {
+  "id": "rmtpi23170cu7b",
+  "artist": "",
+  "title": "",
+  "label": "",
+  "catalogNo": "",
+  "format": "12\"",
+  "year": null,
+  "bpm": null,
+  "genres": [
+   "Techno"
+  ],
+  "tracks": [],
+  "notes": "AWAITING LABEL SHOT — same crate-digging photo concept as the other new record photographed alongside it, this one a stitched-outline wordmark reading like \"TECHNO\" on blue; shelf tags in shot read \"HALLO\" and \"...LADEN\" but there's no visible artist/label text. A photo of the back cover or vinyl label would identify it.",
+  "added": "2026-09-06T07:38:02.588Z",
+  "cover": "covers/rmtpi23170cu7b.jpg"
+ },
+ {
+  "id": "rmtpi2b17xvoyh",
+  "artist": "Khruangbin",
+  "title": "Hasta El Cielo",
+  "label": "Night Time Stories",
+  "catalogNo": "ALNLP50DUBR",
+  "format": "LP",
+  "year": 2019,
+  "bpm": null,
+  "genres": [
+   "Dub",
+   "Reggae",
+   "Funk/Soul"
+  ],
+  "tracks": [
+   {
+    "pos": "A1",
+    "name": "With All The World",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "A2",
+    "name": "Sisters & Brothers",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "A3",
+    "name": "Mary Always",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "A4",
+    "name": "Four Of Five",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "A5",
+    "name": "How I Love",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B1",
+    "name": "Sunny's Vision",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B2",
+    "name": "A La Sala",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B3",
+    "name": "The Red Book",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B4",
+    "name": "Order Of Operations",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B5",
+    "name": "Hasta El Cielo",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "C",
+    "name": "Rules (Scientist Dub Mix)",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "D",
+    "name": "Como Te Quiero (Scientist Dub Mix)",
+    "bpm": null,
+    "dur": ""
+   }
+  ],
+  "notes": "Gatefold 2xLP + bonus 7\", dub companion to Con Todo El Mundo. Sheep/tree gatefold art.",
+  "added": "2026-09-06T07:38:12.955Z",
+  "cover": "covers/rmtpi2b17xvoyh.jpg"
+ },
+ {
+  "id": "rmtpi2kv1gi0yb",
+  "artist": "",
+  "title": "",
+  "label": "",
+  "catalogNo": "",
+  "format": "12\"",
+  "year": null,
+  "bpm": null,
+  "genres": [],
+  "tracks": [],
+  "notes": "AWAITING LABEL SHOT — plain die-cut sleeve with no front artwork; the visible label has a hand-drawn design (two stacked crate/box shapes in blue) and a sticker with track info, both too small and blurry in this photo to read. A closer photo of the label and sticker would identify it.",
+  "added": "2026-09-06T07:38:25.693Z",
+  "cover": "covers/rmtpi2kv1gi0yb.jpg"
+ },
+ {
+  "id": "rmtpi2u3lmrw8n",
+  "artist": "Akua Naru",
+  "title": "All About Love: New Visions",
+  "label": "The Urban Era",
+  "catalogNo": "Urbera-003LP",
+  "format": "LP",
+  "year": 2024,
+  "bpm": null,
+  "genres": [
+   "Hip Hop",
+   "Jazz"
+  ],
+  "tracks": [
+   {
+    "pos": "A1",
+    "name": "Urgency (feat. Cornel West)",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "A2",
+    "name": "(Love) Right Now",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "A3",
+    "name": "Joy (feat. Taylor Samuels)",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B1",
+    "name": "Sugar (Honeyicetea) (feat. Takuya Kuroda)",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B2",
+    "name": "Falling (feat. Jakeya Limitless)",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B3",
+    "name": "Run Away",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "C1",
+    "name": "Somebody Mama",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "C2",
+    "name": "Surrender (Masi's Joint) (feat. Tricia Rose)",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "C3",
+    "name": "The Question (feat. Edson Sean)",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "C4",
+    "name": "Mr. Brownskin",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "D1",
+    "name": "Seraphim (feat. Bryanna Brown)",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "D2",
+    "name": "Poetry: How Does It Feel??? (feat. Edson Sean, Takuya Kuroda)",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "D3",
+    "name": "Affirmation (feat. Panashe Chigumadzi)",
+    "bpm": null,
+    "dur": ""
+   }
+  ],
+  "notes": "2xLP, Europe.",
+  "added": "2026-09-06T07:38:37.666Z",
+  "cover": "covers/rmtpi2u3lmrw8n.jpg"
+ },
+ {
+  "id": "rmtpi392zlssu2",
+  "artist": "Pharoah Sanders & Bill Laswell",
+  "title": "With A Heartbeat",
+  "label": "Glossy Mistakes",
+  "catalogNo": "",
+  "format": "LP",
+  "year": 2026,
+  "bpm": null,
+  "genres": [
+   "Future Jazz",
+   "Ambient",
+   "Electronic"
+  ],
+  "tracks": [
+   {
+    "pos": "A1",
+    "name": "Across Time",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "A2",
+    "name": "Morning Tala",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B1",
+    "name": "Alankara (Beats Of The Heart)",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B2",
+    "name": "Gamaka",
+    "bpm": null,
+    "dur": ""
+   }
+  ],
+  "notes": "AWAITING LABEL SHOT — Glossy Mistakes reissue of Pharoah Sanders & Bill Laswell's \"With A Heartbeat\" (recorded at Orange Music w/ Trilok Gurtu, Graham Haynes, Nicky Skopelitis; artwork by Russell Mills). Catalog is GLOSSY024 on standard black vinyl or GLOSSY024C on the limited pink vinyl edition — a photo of the vinyl itself would confirm which.",
+  "added": "2026-09-06T07:38:57.083Z",
+  "cover": "covers/rmtpi392zlssu2.jpg"
+ },
+ {
+  "id": "rmtpi3gpyk55th",
+  "artist": "Peki Momés",
+  "title": "Peki Momés",
+  "label": "Mocambo",
+  "catalogNo": "MLP 1015",
+  "format": "LP",
+  "year": null,
+  "bpm": null,
+  "genres": [
+   "Funk",
+   "Indie Pop",
+   "Psychedelic",
+   "Soul",
+   "AOR"
+  ],
+  "tracks": [
+   {
+    "pos": "A1",
+    "name": "Başlangıç",
+    "bpm": null,
+    "dur": "2:18"
+   },
+   {
+    "pos": "A2",
+    "name": "Rüya",
+    "bpm": null,
+    "dur": "2:07"
+   },
+   {
+    "pos": "A3",
+    "name": "Göç Mevsimi",
+    "bpm": null,
+    "dur": "3:31"
+   },
+   {
+    "pos": "A4",
+    "name": "Masmavi",
+    "bpm": null,
+    "dur": "3:10"
+   },
+   {
+    "pos": "A5",
+    "name": "Future",
+    "bpm": null,
+    "dur": "3:12"
+   },
+   {
+    "pos": "A6",
+    "name": "Yaşlı Dünya",
+    "bpm": null,
+    "dur": "3:02"
+   },
+   {
+    "pos": "B1",
+    "name": "Oyun",
+    "bpm": null,
+    "dur": "3:30"
+   },
+   {
+    "pos": "B2",
+    "name": "Dertsiz Kedi",
+    "bpm": null,
+    "dur": "3:20"
+   },
+   {
+    "pos": "B3",
+    "name": "Bahçe",
+    "bpm": null,
+    "dur": "1:47"
+   },
+   {
+    "pos": "B4",
+    "name": "Bahar",
+    "bpm": null,
+    "dur": "3:38"
+   },
+   {
+    "pos": "B5",
+    "name": "Uzak",
+    "bpm": null,
+    "dur": "3:30"
+   },
+   {
+    "pos": "B6",
+    "name": "Laleler",
+    "bpm": null,
+    "dur": "3:12"
+   }
+  ],
+  "notes": "AWAITING LABEL SHOT — this is the Mocambo reissue (cat. MLP 1015) of the self-titled Peki Momés LP, hype sticker reads \"finally back\"; front art is identical for the 2nd pressing (2025, standard jacket, yellow labels) and 3rd pressing (2026, pale blue labels). A photo of the vinyl label would confirm which pressing/year this is.",
+  "added": "2026-09-06T07:39:06.982Z",
+  "cover": "covers/rmtpi3gpyk55th.jpg"
+ },
+ {
+  "id": "rmtpi3p4zwy0v4",
+  "artist": "",
+  "title": "Tag",
+  "label": "",
+  "catalogNo": "",
+  "format": "12\"",
+  "year": null,
+  "bpm": null,
+  "genres": [],
+  "tracks": [],
+  "notes": "AWAITING LABEL SHOT — cover reads \"Tag\" over an autumn forest photo with a circular dashed motif, and a cursive signature top right partially legible as \"M. Kohl...\" but not fully resolvable. A closer photo of that signature, or of the back cover/label, would identify the artist.",
+  "added": "2026-09-06T07:39:17.891Z",
+  "cover": "covers/rmtpi3p4zwy0v4.jpg"
+ },
+ {
+  "id": "rmtpi4ea1rq8zm",
+  "artist": "Numbers",
+  "title": "Safety In Numbers",
+  "label": "Main Squeeze",
+  "catalogNo": "MSQ LP002",
+  "format": "LP",
+  "year": 2001,
+  "bpm": null,
+  "genres": [
+   "Broken Beat",
+   "Future Jazz",
+   "Soul"
+  ],
+  "tracks": [
+   {
+    "pos": "A1",
+    "name": "One Africa",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "A2",
+    "name": "Ballad Of Mardou Fox",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "A3",
+    "name": "Mardou's Lament",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B1",
+    "name": "Music Box",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B2",
+    "name": "(Loosening) The Assemblage Point",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B3",
+    "name": "Either - Or",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "C1",
+    "name": "Bitten Apples",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "C2",
+    "name": "Looking Back",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "D1",
+    "name": "Jack Summerset",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "D2",
+    "name": "Moonblood",
+    "bpm": null,
+    "dur": ""
+   }
+  ],
+  "notes": "2xLP, UK.",
+  "added": "2026-09-06T07:39:50.473Z",
+  "cover": "covers/rmtpi4ea1rq8zm.jpg"
+ },
+ {
+  "id": "rmtpi4ozow4dv9",
+  "artist": "Khruangbin",
+  "title": "The Universe Smiles Upon You",
+  "label": "Night Time Stories",
+  "catalogNo": "ALNLP40",
+  "format": "LP",
+  "year": 2015,
+  "bpm": null,
+  "genres": [
+   "Funk/Soul",
+   "Psychedelic"
+  ],
+  "tracks": [
+   {
+    "pos": "A1",
+    "name": "Mr. White",
+    "bpm": null,
+    "dur": "4:58"
+   },
+   {
+    "pos": "A2",
+    "name": "Two Fish and an Elephant",
+    "bpm": null,
+    "dur": "3:33"
+   },
+   {
+    "pos": "A3",
+    "name": "Dern Kala",
+    "bpm": null,
+    "dur": "3:39"
+   },
+   {
+    "pos": "A4",
+    "name": "Little Joe & Mary",
+    "bpm": null,
+    "dur": "5:08"
+   },
+   {
+    "pos": "A5",
+    "name": "White Gloves",
+    "bpm": null,
+    "dur": "3:38"
+   },
+   {
+    "pos": "B1",
+    "name": "People Everywhere (Still Alive)",
+    "bpm": null,
+    "dur": "2:39"
+   },
+   {
+    "pos": "B2",
+    "name": "The Man Who Took My Sunglasses",
+    "bpm": null,
+    "dur": "2:13"
+   },
+   {
+    "pos": "B3",
+    "name": "August Twelve",
+    "bpm": null,
+    "dur": "6:13"
+   },
+   {
+    "pos": "B4",
+    "name": "Balls and Pins",
+    "bpm": null,
+    "dur": "3:28"
+   },
+   {
+    "pos": "B5",
+    "name": "Zionsville",
+    "bpm": null,
+    "dur": "4:11"
+   },
+   {
+    "pos": "B6",
+    "name": "Bin Bin X (hidden track)",
+    "bpm": null,
+    "dur": "2:51"
+   }
+  ],
+  "notes": "Gatefold sleeve, artwork hand-drawn by Laura Lee.",
+  "added": "2026-09-06T07:40:04.356Z",
+  "cover": "covers/rmtpi4ozow4dv9.jpg"
+ }
+]
