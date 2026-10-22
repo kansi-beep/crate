@@ -210,20 +210,45 @@
  },
  {
   "id": "rmthnk3w7hxqj0",
-  "artist": "Sun Ra",
+  "artist": "Various",
   "title": "Sun Ra Tribute",
-  "label": "",
-  "catalogNo": "",
+  "label": "Mo'Smog",
+  "catalogNo": "124007-8",
   "format": "12\"",
-  "year": null,
+  "year": 2003,
   "bpm": null,
   "genres": [
    "Broken Beat",
    "Future Jazz",
    "Latin Jazz"
   ],
-  "tracks": [],
-  "notes": "AWAITING LABEL SHOT — two Italian 12\"s share this title and Gianni Rossi's artwork: Mo'Smog 124007-8 (2003: Sun Ra 'Sattelites' Zero dB & Hectic Mix / Suntools 'Moonbeam' / Way-O 'African Bird') and Dejavu djv 3000007 (2005: three 'Stardust From Tomorrow' remixes, incl. Gerardo Frisina). Photograph the centre label to settle it.",
+  "tracks": [
+   {
+    "pos": "A1",
+    "name": "Sun Ra - Satellites (Zero dB Remix)",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "A2",
+    "name": "Sun Ra - Satellites (Hectic Mix)",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B1",
+    "name": "Suntools - Moonbeam",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B2",
+    "name": "Way-O - African Bird",
+    "bpm": null,
+    "dur": ""
+   }
+  ],
+  "notes": "Italian 12\", Mo'Smog 124007-8 (2003). Sleeve sticker confirms: 'Satellites' remixed by Zero dB plus a Hectic mix; 'Moonbeam' by Suntools; 'African Bird' by Way-O (Giulio Alessi & Paolo Scotti). All tracks produced by Paolo Scotti for Mo'Smog. Artwork by Gianni Rossi. Settled against the Dejavu djv 3000007 pressing.",
   "added": "2026-08-31T19:49:52.183Z",
   "cover": "covers/rmthnk3w7hxqj0.jpg"
  },
@@ -886,5 +911,276 @@
   "notes": "Gatefold sleeve, artwork hand-drawn by Laura Lee.",
   "added": "2026-09-06T07:40:04.356Z",
   "cover": "covers/rmtpi4ozow4dv9.jpg"
+ },
+ {
+  "artist": "",
+  "title": "",
+  "label": "Ramadan Recordings",
+  "catalogNo": "",
+  "format": "12\"",
+  "year": null,
+  "genres": [
+   "Broken Beat",
+   "Future Jazz"
+  ],
+  "tracks": [],
+  "notes": "AWAITING LABEL SHOT — white sleeve with a large maroon abstract/figurative graphic; only text on the front is the \"ramadan recordings\" logo bottom-right. Shop sticker reads EXP. ~5.00. Ramadan Recordings is a UK broken-beat/future-jazz label; a photo of the centre label or runout would give the catalogue number and artist.",
+  "id": "rmtchxexxvegm0",
+  "bpm": null,
+  "added": "2026-10-22T16:04:10.763294Z",
+  "cover": "covers/rmtchxexxvegm0-20261022160410.jpg"
+ },
+ {
+  "artist": "Various",
+  "title": "Disco Bahar",
+  "label": "Music India",
+  "catalogNo": "2392 344",
+  "format": "LP",
+  "year": null,
+  "genres": [
+   "Bollywood",
+   "Disco",
+   "Stage & Screen"
+  ],
+  "tracks": [],
+  "notes": "Indian pressing, Music India 2392 344. Film-disco compilation; sleeve is a filmstrip border around a psychedelic dancer shot. Track list needs a back-cover photo.",
+  "id": "rmt2kk15azd6j0",
+  "bpm": null,
+  "added": "2026-10-22T16:04:10.763294Z",
+  "cover": "covers/rmt2kk15azd6j0-20261022160410.jpg"
+ },
+ {
+  "artist": "Milon Gupta",
+  "title": "Top Of The Pops '85",
+  "label": "Concord Records",
+  "catalogNo": "",
+  "format": "LP",
+  "year": 1985,
+  "genres": [
+   "Easy Listening",
+   "Bollywood",
+   "Instrumental"
+  ],
+  "tracks": [],
+  "notes": "Harmonica instrumental album — sleeve credits 'MILON GUPTA / HARMONICA'. Cover art is a gold record with lipstick-print cards. Catalogue number needs a back-cover or label photo.",
+  "id": "rmt0xhrp1g0bis",
+  "bpm": null,
+  "added": "2026-10-22T16:04:10.763294Z",
+  "cover": "covers/rmt0xhrp1g0bis-20261022160410.jpg"
+ },
+ {
+  "artist": "Charanjit Singh",
+  "title": "Synthesizing: Ten Ragas To A Disco Beat",
+  "label": "",
+  "catalogNo": "",
+  "format": "LP",
+  "year": 1982,
+  "genres": [
+   "Acid House",
+   "Electronic",
+   "Disco",
+   "Indian Classical"
+  ],
+  "tracks": [],
+  "notes": "Deluxe 2xLP reissue of the 1982 Mumbai landmark — ten ragas on Roland TB-303/TR-808/Jupiter-8, widely called a proto-acid-house record. Hype sticker notes expanded gatefold, 20-page booklet, remaster by Rashad Becker, released with the Charanjit Singh estate, pressed at Optimal, on 'waterfall' colour wax. Label/cat no. need a spine or label photo.",
+  "id": "rmtfpbhxvv5kcu",
+  "bpm": null,
+  "added": "2026-10-22T16:04:10.763294Z",
+  "cover": "covers/rmtfpbhxvv5kcu-20261022160410.jpg"
+ },
+ {
+  "artist": "Runa Laila",
+  "title": "Superruna",
+  "label": "EMI / Supreme",
+  "catalogNo": "",
+  "format": "LP",
+  "year": null,
+  "genres": [
+   "Disco",
+   "Bollywood",
+   "Funk/Soul",
+   "Reggae"
+  ],
+  "tracks": [],
+  "notes": "Bappi Lahiri presents Runa Laila. Shubhangi's own sleeve note: 'ESSENTIAL INDIAN — DISCO REGGAE R&B'. Indian pressing on Supreme/EMI. Catalogue number needs a label photo.",
+  "id": "rmteo5ju7016bd",
+  "bpm": null,
+  "added": "2026-10-22T16:04:10.763294Z",
+  "cover": "covers/rmteo5ju7016bd-20261022160410.jpg"
+ },
+ {
+  "artist": "",
+  "title": "Karachi Files",
+  "label": "",
+  "catalogNo": "",
+  "format": "LP",
+  "year": null,
+  "genres": [
+   "Electronic",
+   "Experimental"
+  ],
+  "tracks": [],
+  "notes": "AWAITING LABEL SHOT — white sleeve, portrait of a man in a white kurta and prayer cap, title in Latin and Urdu (\"کراچی فائلز / KARACHI FILES\"). Shop sticker EXP. 15.00. Likely the Karachi Files compilation documenting Pakistani electronic/experimental artists; a back-cover photo would confirm label, year and artists.",
+  "id": "rmtffun0yysjoc",
+  "bpm": null,
+  "added": "2026-10-22T16:04:10.763294Z",
+  "cover": "covers/rmtffun0yysjoc-20261022160410.jpg"
+ },
+ {
+  "artist": "Rahul Dev Burman",
+  "title": "Ijaazat",
+  "label": "Saregama",
+  "catalogNo": "",
+  "format": "LP",
+  "year": null,
+  "genres": [
+   "Bollywood",
+   "Stage & Screen",
+   "Soundtrack"
+  ],
+  "tracks": [],
+  "notes": "45 RPM reissue of the 1987 Gulzar film soundtrack. Lyrics and direction: Gulzar; music: R.D. Burman. Vaishno Films / Ashok Sachdeva presents Gulzar's. Saregama (RP-Sanjiv Goenka Group). Holds 'Mera Kuch Saamaan' and 'Katra Katra'.",
+  "id": "rmtfgzyaea6up4",
+  "bpm": null,
+  "added": "2026-10-22T16:04:10.763294Z",
+  "cover": "covers/rmtfgzyaea6up4-20261022160410.jpg"
+ },
+ {
+  "artist": "Anjali",
+  "title": "Aquila",
+  "label": "",
+  "catalogNo": "",
+  "format": "12\"",
+  "year": null,
+  "genres": [
+   "Breakbeat",
+   "Downtempo",
+   "Electronic"
+  ],
+  "tracks": [
+   {
+    "pos": "A",
+    "name": "Aquila",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B",
+    "name": "Aquila B",
+    "bpm": null,
+    "dur": ""
+   }
+  ],
+  "notes": "Made in England. Written and produced by Anjali Bhatia; mixed and engineered by Boywonder at Boywonder Studios; scratching by Sepulid. Obi-style strip over a plain kraft sleeve, planets/congas label art. Label name on the centre label is partly legible — a closer label photo would confirm it.",
+  "id": "rmtxd7mln1pokf",
+  "bpm": null,
+  "added": "2026-10-22T16:04:10.763294Z",
+  "cover": "covers/rmtxd7mln1pokf-20261022160410.jpg"
+ },
+ {
+  "artist": "",
+  "title": "",
+  "label": "",
+  "catalogNo": "",
+  "format": "12\"",
+  "year": null,
+  "genres": [],
+  "tracks": [],
+  "notes": "AWAITING LABEL SHOT — plain black sleeve; centre label is an orange sunburst with a white line-drawn clenched fist / lion motif and no readable text at this resolution. Shop sticker 2.00. A closer photo of the label or the runout would identify it.",
+  "id": "rmt5t7cd4lqrhg",
+  "bpm": null,
+  "added": "2026-10-22T16:04:10.763294Z",
+  "cover": "covers/rmt5t7cd4lqrhg-20261022160410.jpg"
+ },
+ {
+  "artist": "A.R. Rahman",
+  "title": "Bombay",
+  "label": "Universal Music / Blisstainment",
+  "catalogNo": "",
+  "format": "LP",
+  "year": null,
+  "genres": [
+   "Soundtrack",
+   "Stage & Screen",
+   "Bollywood"
+  ],
+  "tracks": [],
+  "notes": "'Original Classics Remastered' vinyl reissue of the 1995 Mani Ratnam soundtrack. Music: A.R. Rahman; lyrics: Mehboob; presented by Jhamu Sughand. Holds 'Bombay Theme', 'Kehna Hi Kya', 'Tu Hi Re'.",
+  "id": "rmt1seat6kwycl",
+  "bpm": null,
+  "added": "2026-10-22T16:04:10.763294Z",
+  "cover": "covers/rmt1seat6kwycl-20261022160410.jpg"
+ },
+ {
+  "artist": "Amjad Ali Khan",
+  "title": "Moksha",
+  "label": "Real World Records",
+  "catalogNo": "",
+  "format": "LP",
+  "year": null,
+  "genres": [
+   "Indian Classical",
+   "Hindustani"
+  ],
+  "tracks": [],
+  "notes": "First vinyl issue of the Real World album. Sarod; sons Amaan Ali Bangash and Ayaan Ali Bangash feature. Obi strip notes ragas plus folk music from West Bengal and Himachal Pradesh. Catalogue number needs a spine photo.",
+  "id": "rmteyohzu9dzhq",
+  "bpm": null,
+  "added": "2026-10-22T16:04:10.763294Z",
+  "cover": "covers/rmteyohzu9dzhq-20261022160410.jpg"
+ },
+ {
+  "artist": "Dysh & Oscar",
+  "title": "",
+  "label": "",
+  "catalogNo": "",
+  "format": "2xLP",
+  "year": null,
+  "genres": [
+   "Funk/Soul",
+   "Broken Beat"
+  ],
+  "tracks": [],
+  "notes": "AWAITING LABEL SHOT — dark sleeve with large LED/dot-matrix digits and the line \"DYSH & OSCAR PRESENT\". Shubhangi's own sticker lists SIDE A / SIDE B \"laidback funk\" / SIDE C / SIDE D. A photo of the centre label would give the title and catalogue number.",
+  "id": "rmtxmqd7c1ijy4",
+  "bpm": null,
+  "added": "2026-10-22T16:04:10.763294Z",
+  "cover": "covers/rmtxmqd7c1ijy4-20261022160410.jpg"
+ },
+ {
+  "artist": "",
+  "title": "",
+  "label": "Public Transit Recordings",
+  "catalogNo": "",
+  "format": "12\"",
+  "year": null,
+  "genres": [
+   "House",
+   "Broken Beat"
+  ],
+  "tracks": [],
+  "notes": "AWAITING LABEL SHOT — plain white sleeve; B-side label is sepia, Public Transit Recordings, title partly obscured by the pressing (reads \"LA...\" over \"LOST\"). Public Transit is a Canadian house/broken-beat label. A photo of the A-side label would identify it.",
+  "id": "rmtfbx1zl6v2x7",
+  "bpm": null,
+  "added": "2026-10-22T16:04:10.763294Z",
+  "cover": "covers/rmtfbx1zl6v2x7-20261022160410.jpg"
+ },
+ {
+  "artist": "Hariprasad Chaurasia",
+  "title": "Maestro's: The Best Of Hariprasad Chaurasia",
+  "label": "Music Today",
+  "catalogNo": "",
+  "format": "LP",
+  "year": null,
+  "genres": [
+   "Indian Classical",
+   "Hindustani"
+  ],
+  "tracks": [],
+  "notes": "India Today Group / Music Today, 180 gram. Bansuri (flute), Hindustani classical. Catalogue number needs a spine or label photo.",
+  "id": "rmt5v3fsv4lmdg",
+  "bpm": null,
+  "added": "2026-10-22T16:04:10.763294Z",
+  "cover": "covers/rmt5v3fsv4lmdg-20261022160410.jpg"
  }
 ]
