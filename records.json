@@ -255,19 +255,38 @@
  {
   "id": "rmtphzyjdz2y1z",
   "artist": "Jazzanova",
-  "title": "",
-  "label": "",
-  "catalogNo": "",
+  "title": "Soon (Part Two)",
+  "label": "Jazzanova Compost Records (JCR)",
+  "catalogNo": "JCR033-1",
   "format": "12\"",
-  "year": null,
+  "year": 2002,
   "bpm": null,
   "genres": [
    "Future Jazz",
    "Broken Beat",
    "Downtempo"
   ],
-  "tracks": [],
-  "notes": "Jazzanova — identified by Shubhangi as one of a pair she owns, 'part 1 & 2'. The blue sleeve carries a graffiti-style outlined wordmark (read as 'JAZZ'/'TECHNO' from earlier photos) over a photo of hands flipping a record crate, shelf tags 'HOUSE', 'TECHNO', 'HALLO'. Most likely the two vinyl parts of Jazzanova's 'The Remixes 1997-2000' (JCR/Compost, 2000, DE) — Discogs lists that title as a box set but its search would not return the split vinyl parts to confirm. AWAITING LABEL SHOT to fix the part number, catalogue number and tracklist. This is the copy photographed flat on the crate (shop sticker reads 'FUT. JAZZ', 3.00).",
+  "tracks": [
+   {
+    "pos": "A1",
+    "name": "Soon (P Smoovah Mix)",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "A2",
+    "name": "Soon (Instrumental)",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B1",
+    "name": "Soon (Domu Ill Dub)",
+    "bpm": null,
+    "dur": ""
+   }
+  ],
+  "notes": "Confirmed from the sleeve: the yellow Jutojo artwork (hand lifting the sleeve over a record crate, divider reading \"...IM LADEN\", Sonar sticker at left) matches the Discogs front-cover scan of Jazzanova – Soon (Part Two), JCR033-1, Germany, 20 September 2002. Artwork: Jutojo. Vocals and lyrics: Vikter Duplaix; written by A. Barck, S. Leisering, V. Duplaix. Mastered by Bo Kondren, lacquer cut by Arnold Kasar at Calyx, Berlin; pressed by SNA. Side A plays at 33⅓ RPM, side B at 45 RPM. Durations are not printed on the release, so they are left blank. This is the copy photographed flat on the crate (shop sticker reads 'FUT. JAZZ', 3.00).",
   "added": "2026-09-06T07:36:23.449Z",
   "cover": "covers/rmtphzyjdz2y1z.jpg"
  },
@@ -390,7 +409,7 @@
    "Downtempo"
   ],
   "tracks": [],
-  "notes": "Jazzanova — identified by Shubhangi as one of a pair she owns, 'part 1 & 2'. The blue sleeve carries a graffiti-style outlined wordmark (read as 'JAZZ'/'TECHNO' from earlier photos) over a photo of hands flipping a record crate, shelf tags 'HOUSE', 'TECHNO', 'HALLO'. Most likely the two vinyl parts of Jazzanova's 'The Remixes 1997-2000' (JCR/Compost, 2000, DE) — Discogs lists that title as a box set but its search would not return the split vinyl parts to confirm. AWAITING LABEL SHOT to fix the part number, catalogue number and tracklist. This is the copy photographed angled over the crate (shop sticker 110902, 7.99).",
+  "notes": "AWAITING LABEL SHOT — blue Jutojo sleeve, same crate-digging photo series as its yellow sibling (shelf dividers 'TECHNO', 'HALLO'), graffiti JAZZANOVA wordmark in red outline. The yellow copy in this crate is now confirmed as Soon (Part Two), JCR033-1. This blue one is almost certainly another 12\" from the same Jutojo-designed JCR 'In Between' single run, but it is NOT a colour match for Discogs' scan of Soon (Part One) (JCR028-1), whose front is gold with pink and navy outlines. Other candidates from the same series: That Night (Remixes) JCR026-1, Days To Come (Remixes) JCR032-1. A photo of the centre label, or of the back cover (the catalogue number is printed top-left and the title/mix list top-right), would settle it. This is the copy photographed angled over the crate (shop sticker 110902, 7.99).",
   "added": "2026-09-06T07:38:02.588Z",
   "cover": "covers/rmtpi23170cu7b.jpg"
  },
@@ -975,18 +994,79 @@
  {
   "artist": "Charanjit Singh",
   "title": "Synthesizing: Ten Ragas To A Disco Beat",
-  "label": "",
-  "catalogNo": "",
-  "format": "LP",
-  "year": 1982,
+  "label": "Light In The Attic",
+  "catalogNo": "LITA 226",
+  "format": "2xLP",
+  "year": 2026,
   "genres": [
    "Acid House",
    "Electronic",
    "Disco",
    "Indian Classical"
   ],
-  "tracks": [],
-  "notes": "Deluxe 2xLP reissue of the 1982 Mumbai landmark — ten ragas on Roland TB-303/TR-808/Jupiter-8, widely called a proto-acid-house record. Hype sticker notes expanded gatefold, 20-page booklet, remaster by Rashad Becker, released with the Charanjit Singh estate, pressed at Optimal, on 'waterfall' colour wax. Label/cat no. need a spine or label photo.",
+  "tracks": [
+   {
+    "pos": "A1",
+    "name": "Raga: Bhairavi",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "A2",
+    "name": "Raga: Lalit",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "A3",
+    "name": "Raga: Bhupali",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B1",
+    "name": "Raga: Todi",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B2",
+    "name": "Raga: Madhuvanti",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "B3",
+    "name": "Raga: Meghmalhar",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "C1",
+    "name": "Raga: Yaman",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "C2",
+    "name": "Raga: Kalavati",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "D1",
+    "name": "Raga: Malkauns",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "D2",
+    "name": "Raga: Bairagi",
+    "bpm": null,
+    "dur": ""
+   }
+  ],
+  "notes": "Light In The Attic deluxe 2xLP reissue (LITA 226, US, 7 August 2026) of the 1982 Mumbai landmark — ten ragas on Roland TB-303/TR-808/Jupiter-8. Matched to the pearl-flip 'Waterfall' colour-wax variant by the obi strip, which reads \"PRESSED ON PEARL FLIP 'WATERFALL' COLOR WAX\"; the same catalogue number also exists on black wax. Expanded gatefold with 20-page booklet, remastered by Johanz Westerman at Ballyhoo, lacquer cut by Stefan Tenner, pressed at Optimal, released in cooperation with Charanjit Singh's estate and licensed from Saregama. Original: His Master's Voice (India) ECSD 2912, 1982, recorded at HMV Studios, Bombay. No durations are printed on the release. NOTE: the cover image stored on this record is not this sleeve — it shows the Disco Bahar LP. The 22 Oct photo batch looks mis-paired: several covers sit two records out of step. Re-shoot or re-link when convenient.",
   "id": "rmtfpbhxvv5kcu",
   "bpm": null,
   "added": "2026-10-22T16:04:10.763294Z",
@@ -1052,10 +1132,10 @@
  {
   "artist": "Anjali",
   "title": "Aquila",
-  "label": "",
-  "catalogNo": "",
+  "label": "Wiiija Records",
+  "catalogNo": "WIJ 92T",
   "format": "12\"",
-  "year": null,
+  "year": 1998,
   "genres": [
    "Breakbeat",
    "Downtempo",
@@ -1075,7 +1155,7 @@
     "dur": ""
    }
   ],
-  "notes": "Made in England. Written and produced by Anjali Bhatia; mixed and engineered by Boywonder at Boywonder Studios; scratching by Sepulid. Obi-style strip over a plain kraft sleeve, planets/congas label art. Label name on the centre label is partly legible — a closer label photo would confirm it.",
+  "notes": "Wiiija Records WIJ 92T, UK, released 7 December 1998; 12\", made in England, pressed at Damont Audio. Written and produced by Anjali Bhatia. Discogs credits the mix/engineering to Boymerang (at Boymerang Studios) and the scratches to Spykid — the earlier reading of the obi strip as 'Boywonder' and 'Sepulid' looks like a misread; worth a check against the strip. Mastered by Mandy Parnell. Styles: downtempo, breaks, trip hop, dub. No durations are printed on the release. NOTE: the cover image stored on this record is not this sleeve — it shows the Karachi Files LP. The 22 Oct photo batch looks mis-paired: several covers sit two records out of step.",
   "id": "rmtxd7mln1pokf",
   "bpm": null,
   "added": "2026-10-22T16:04:10.763294Z",
