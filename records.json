@@ -254,7 +254,7 @@
  },
  {
   "id": "rmtphzyjdz2y1z",
-  "artist": "",
+  "artist": "Jazzanova",
   "title": "",
   "label": "",
   "catalogNo": "",
@@ -262,10 +262,12 @@
   "year": null,
   "bpm": null,
   "genres": [
-   "Jazz"
+   "Future Jazz",
+   "Broken Beat",
+   "Downtempo"
   ],
   "tracks": [],
-  "notes": "AWAITING LABEL SHOT — front cover is a stitched-outline \"JAZZ\" wordmark over a photo of hands flipping through a record crate, with shop signage in shot (\"...im Laden\"); no artist, title, or catalogue text visible. A photo of the back cover or vinyl label would identify this one.",
+  "notes": "Jazzanova — identified by Shubhangi as one of a pair she owns, 'part 1 & 2'. The blue sleeve carries a graffiti-style outlined wordmark (read as 'JAZZ'/'TECHNO' from earlier photos) over a photo of hands flipping a record crate, shelf tags 'HOUSE', 'TECHNO', 'HALLO'. Most likely the two vinyl parts of Jazzanova's 'The Remixes 1997-2000' (JCR/Compost, 2000, DE) — Discogs lists that title as a box set but its search would not return the split vinyl parts to confirm. AWAITING LABEL SHOT to fix the part number, catalogue number and tracklist. This is the copy photographed flat on the crate (shop sticker reads 'FUT. JAZZ', 3.00).",
   "added": "2026-09-06T07:36:23.449Z",
   "cover": "covers/rmtphzyjdz2y1z.jpg"
  },
@@ -375,7 +377,7 @@
  },
  {
   "id": "rmtpi23170cu7b",
-  "artist": "",
+  "artist": "Jazzanova",
   "title": "",
   "label": "",
   "catalogNo": "",
@@ -383,10 +385,12 @@
   "year": null,
   "bpm": null,
   "genres": [
-   "Techno"
+   "Future Jazz",
+   "Broken Beat",
+   "Downtempo"
   ],
   "tracks": [],
-  "notes": "AWAITING LABEL SHOT — same crate-digging photo concept as the other new record photographed alongside it, this one a stitched-outline wordmark reading like \"TECHNO\" on blue; shelf tags in shot read \"HALLO\" and \"...LADEN\" but there's no visible artist/label text. A photo of the back cover or vinyl label would identify it.",
+  "notes": "Jazzanova — identified by Shubhangi as one of a pair she owns, 'part 1 & 2'. The blue sleeve carries a graffiti-style outlined wordmark (read as 'JAZZ'/'TECHNO' from earlier photos) over a photo of hands flipping a record crate, shelf tags 'HOUSE', 'TECHNO', 'HALLO'. Most likely the two vinyl parts of Jazzanova's 'The Remixes 1997-2000' (JCR/Compost, 2000, DE) — Discogs lists that title as a box set but its search would not return the split vinyl parts to confirm. AWAITING LABEL SHOT to fix the part number, catalogue number and tracklist. This is the copy photographed angled over the crate (shop sticker 110902, 7.99).",
   "added": "2026-09-06T07:38:02.588Z",
   "cover": "covers/rmtpi23170cu7b.jpg"
  },
