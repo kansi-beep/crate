@@ -1266,5 +1266,225 @@
   "bpm": null,
   "added": "2026-10-22T16:04:10.763294Z",
   "cover": "covers/rmt5v3fsv4lmdg-20261022160410.jpg"
+ },
+ {
+  "artist": "Ali Akbar Khan, John Handy, Dr. L. Subramaniam",
+  "title": "Rainbow",
+  "label": "MPS Records",
+  "catalogNo": "0068.268",
+  "format": "LP",
+  "year": 1981,
+  "genres": [
+   "Jazz",
+   "Hindustani",
+   "Carnatic",
+   "Fusion"
+  ],
+  "tracks": [
+   {
+    "pos": "A1",
+    "name": "Rajashik - The Majesty Of Wisdom",
+    "bpm": null,
+    "dur": "8:10"
+   },
+   {
+    "pos": "A2",
+    "name": "Indian Boogie Shoes",
+    "bpm": null,
+    "dur": "8:57"
+   },
+   {
+    "pos": "A3",
+    "name": "Rainbow Serenade",
+    "bpm": null,
+    "dur": "6:28"
+   },
+   {
+    "pos": "B1",
+    "name": "Garland Of Flowers - Alap And Jod In Raga Mala",
+    "bpm": null,
+    "dur": "9:50"
+   },
+   {
+    "pos": "B2",
+    "name": "Kali Dance",
+    "bpm": null,
+    "dur": "13:04"
+   }
+  ],
+  "notes": "German pressing on MPS. Sarod (Ali Akbar Khan), alto sax (John Handy) and violin (L. Subramaniam) — the 1981 Indo-jazz summit. 'Indian Boogie Shoes' is the up cut; 'Kali Dance' is the long one.",
+  "id": "rmtdee9o7qm89p",
+  "bpm": null,
+  "added": "2026-10-24T10:45:33.598666Z",
+  "cover": "covers/rmtdee9o7qm89p-20261024104533.jpg"
+ },
+ {
+  "artist": "Jazzanova",
+  "title": "",
+  "label": "",
+  "catalogNo": "",
+  "format": "12\"",
+  "year": null,
+  "genres": [
+   "Future Jazz",
+   "Broken Beat",
+   "Downtempo"
+  ],
+  "tracks": [],
+  "notes": "AWAITING LABEL SHOT — the third of the Jazzanova set, yellow sleeve with the same outlined graffiti wordmark (JAZ/ZAN/OVA stacked) over the crate-digging photo used on the two blue copies. Shop sticker 010702, 4.00. Shelf tags in shot: SONAR, '...IM LADEN'. Companion to [[crate-index]] entries rmtphzyjdz2y1z and rmtpi23170cu7b. A centre-label photo would give the part number and tracklist.",
+  "id": "rmt47oetu9giw9",
+  "bpm": null,
+  "added": "2026-10-24T10:45:33.598666Z",
+  "cover": "covers/rmt47oetu9giw9-20261024104533.jpg"
+ },
+ {
+  "artist": "Nusrat Fateh Ali Khan & Michael Brook",
+  "title": "Night Song",
+  "label": "Real World Records",
+  "catalogNo": "LPRW50X",
+  "format": "LP",
+  "year": 2026,
+  "genres": [
+   "Qawwali",
+   "Ambient",
+   "Electronic",
+   "Worldbeat"
+  ],
+  "tracks": [
+   {
+    "pos": "A1",
+    "name": "My Heart, My Life",
+    "bpm": null,
+    "dur": "5:30"
+   },
+   {
+    "pos": "A2",
+    "name": "Intoxicated",
+    "bpm": null,
+    "dur": "7:34"
+   },
+   {
+    "pos": "A3",
+    "name": "Lament",
+    "bpm": null,
+    "dur": "5:14"
+   },
+   {
+    "pos": "A4",
+    "name": "My Comfort Remains",
+    "bpm": null,
+    "dur": "6:39"
+   },
+   {
+    "pos": "B1",
+    "name": "Longing",
+    "bpm": null,
+    "dur": "5:35"
+   },
+   {
+    "pos": "B2",
+    "name": "Sweet Pain",
+    "bpm": null,
+    "dur": "6:28"
+   },
+   {
+    "pos": "B3",
+    "name": "Night Song",
+    "bpm": null,
+    "dur": "4:47"
+   },
+   {
+    "pos": "B4",
+    "name": "Crest",
+    "bpm": null,
+    "dur": "6:14"
+   }
+  ],
+  "notes": "30th Anniversary Edition of the 1996 Real World album, green smoke-effect vinyl with expanded sleeve notes. Barcode 884108019863. Side split inferred from the original running order — confirm against the label.",
+  "id": "rmtfyq59zlc791",
+  "bpm": null,
+  "added": "2026-10-24T10:45:33.598666Z",
+  "cover": "covers/rmtfyq59zlc791-20261024104533.jpg"
+ },
+ {
+  "artist": "Ananda Shankar",
+  "title": "Sā-Re-Gā Machān",
+  "label": "His Master's Voice",
+  "catalogNo": "ECSD 2636",
+  "format": "LP",
+  "year": 1981,
+  "genres": [
+   "Psychedelic",
+   "Funk",
+   "Electronic",
+   "Bollywood"
+  ],
+  "tracks": [
+   {
+    "pos": "A1",
+    "name": "Sa-Re-Ga Machan",
+    "bpm": null,
+    "dur": ""
+   },
+   {
+    "pos": "A2",
+    "name": "Romantic Rhino",
+    "bpm": null,
+    "dur": "5:07"
+   },
+   {
+    "pos": "A3",
+    "name": "Charging Tiger",
+    "bpm": null,
+    "dur": "4:09"
+   },
+   {
+    "pos": "A4",
+    "name": "Night In The Forest",
+    "bpm": null,
+    "dur": "3:56"
+   },
+   {
+    "pos": "B1",
+    "name": "Jungle King",
+    "bpm": null,
+    "dur": "3:45"
+   },
+   {
+    "pos": "B2",
+    "name": "Birds In The Sky",
+    "bpm": null,
+    "dur": "4:37"
+   },
+   {
+    "pos": "B3",
+    "name": "Monkeys' Tea Party",
+    "bpm": null,
+    "dur": "3:09"
+   },
+   {
+    "pos": "B4",
+    "name": "Playful Squirrels",
+    "bpm": null,
+    "dur": "1:54"
+   },
+   {
+    "pos": "B5",
+    "name": "Dancing Peacocks",
+    "bpm": null,
+    "dur": "3:05"
+   },
+   {
+    "pos": "B6",
+    "name": "Jungle Symphony",
+    "bpm": null,
+    "dur": "3:37"
+   }
+  ],
+  "notes": "Indian pressing, HMV/EMI ECSD 2636. Durations are from the videos linked on Discogs rather than the sleeve, so treat them as approximate. 'Dancing Peacocks' and 'Jungle Symphony' are the floor cuts.",
+  "id": "rmthzh4ut8gqma",
+  "bpm": null,
+  "added": "2026-10-24T10:45:33.598666Z",
+  "cover": "covers/rmthzh4ut8gqma-20261024104533.jpg"
  }
 ]
